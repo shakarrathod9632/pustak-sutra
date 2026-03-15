@@ -1,0 +1,624 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: COURSE HERO ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background: #EAF2FB; border-radius: 40% 60% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFE8DA; border-radius: 60% 40% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #FFFFFF; padding: 8px 25px; border-radius: 60px; box-shadow: 0 5px 15px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0;">
+                    <i class="fas fa-book-open" style="color: #F26B1D; margin-right: 8px;"></i>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">📖 ENGLISH PROGRAM</span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                    English <span style="color: #F26B1D; position: relative; display: inline-block;">Learning Program
+                    <svg width="100%" height="15" viewBox="0 0 220 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 55 0, 110 10 T 220 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p style="color: #475569; font-size: 1.2rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Strong English skills help children express themselves clearly, understand what they read, and build confidence in school. Our program makes learning English enjoyable and effective for every child.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: WHY ENGLISH MATTERS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHY IT MATTERS</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Why English Matters for Children
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Reason 1 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-comments" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Better Communication</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Children learn to express their thoughts clearly, ask questions confidently, and share ideas with others.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-book-reader" style="color: #F26B1D; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Improved Reading Ability</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Strong reading skills help children understand stories, textbooks, and instructions across all subjects.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 3 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user-check" style="color: #FFC845; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Confidence in School</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">When children understand English well, they participate more in class and feel more confident.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 4 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-layer-group" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Stronger Academic Foundation</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">English is the language of learning. Strong English skills help children succeed in every subject.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: WHAT STUDENTS WILL LEARN ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">COURSE CONTENT</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        What Students Will Learn
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Learning Item 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-book" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Reading Skills</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6; margin-left: 0;">Children learn to read with understanding, enjoy stories, and build strong comprehension skills.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-spell-check" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Grammar Fundamentals</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Simple, clear grammar lessons help children understand how sentences work and write correctly.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-font" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Vocabulary Development</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Fun activities and games help children learn new words and use them in everyday conversations.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-pencil-alt" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Sentence Construction</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">From simple to complex sentences, children learn to express their thoughts clearly in writing.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-paragraph" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Paragraph Writing</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Children learn to organize their ideas and write short paragraphs with confidence.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 6 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-microphone" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Speaking Skills</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Activities that build confidence in speaking and expressing ideas in front of others.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 4: LEVEL BASED SYLLABUS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">AGE APPROPRIATE</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Level Based Syllabus
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Level 1: LKG - UKG -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #0B3C73; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #0B3C73; font-weight: 700; font-size: 1.2rem;">1</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">LKG – UKG</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Learning Topics:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Alphabet recognition and phonics</li>
+                        <li style="margin-bottom: 5px;">Basic vocabulary through pictures</li>
+                        <li style="margin-bottom: 5px;">Simple words and sentences</li>
+                        <li>Listening and speaking through stories</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skill Development Goals:</p>
+                    <p style="color: #475569;">Recognize letters, understand basic words, and develop listening skills.</p>
+                </div>
+            </div>
+            
+            <!-- Level 2: Class 1 - Class 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #F26B1D; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #F26B1D; font-weight: 700; font-size: 1.2rem;">2</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 1 – Class 2</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Learning Topics:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Sentence formation</li>
+                        <li style="margin-bottom: 5px;">Basic grammar (nouns, verbs, adjectives)</li>
+                        <li style="margin-bottom: 5px;">Reading short stories</li>
+                        <li>Simple writing exercises</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skill Development Goals:</p>
+                    <p style="color: #475569;">Form simple sentences, understand basic grammar, and read with understanding.</p>
+                </div>
+            </div>
+            
+            <!-- Level 3: Class 3 - Class 5 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #FFC845; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #FFC845; font-weight: 700; font-size: 1.2rem;">3</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 3 – Class 5</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Learning Topics:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Advanced grammar (tenses, prepositions)</li>
+                        <li style="margin-bottom: 5px;">Paragraph writing</li>
+                        <li style="margin-bottom: 5px;">Vocabulary building</li>
+                        <li>Comprehension passages</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skill Development Goals:</p>
+                    <p style="color: #475569;">Write paragraphs, use correct grammar, and understand longer texts.</p>
+                </div>
+            </div>
+            
+            <!-- Level 4: Class 6 - Class 8 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #0B3C73; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #0B3C73; font-weight: 700; font-size: 1.2rem;">4</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 6 – Class 8</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Learning Topics:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Essay and letter writing</li>
+                        <li style="margin-bottom: 5px;">Advanced vocabulary</li>
+                        <li style="margin-bottom: 5px;">Critical reading</li>
+                        <li>Creative writing</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skill Development Goals:</p>
+                    <p style="color: #475569;">Express ideas fluently in writing, read critically, and build strong communication skills.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 5: TEACHING APPROACH ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">HOW WE TEACH</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Our Teaching Approach
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Approach 1 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-puzzle-piece" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Activity-Based Learning</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Games, puzzles, and hands-on activities make learning English enjoyable and effective.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 2 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-book-reader" style="color: #F26B1D; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Reading Practice</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Regular reading sessions help children build fluency and comprehension naturally.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 3 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-gamepad" style="color: #FFC845; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Vocabulary Games</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Fun word games and activities expand vocabulary in an engaging way.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 4 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-users" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Interactive Teaching</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Teachers engage every child through discussions, storytelling, and group activities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 6: COURSE HIGHLIGHTS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT MAKES US SPECIAL</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Course Highlights
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Highlight 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-brain" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Strong Grammar Foundation</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">Clear, step-by-step grammar lessons help children write and speak correctly.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-book" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Vocabulary Development</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Children learn new words through engaging activities and use them confidently.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-pencil-alt" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Writing Skills Improvement</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">From sentences to paragraphs, children develop clear and organized writing skills.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-book-open" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Reading Practice</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Regular reading sessions build fluency, comprehension, and a love for books.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-comments" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Confidence in Communication</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Children gain confidence to express themselves in school and everyday life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 7: LEARNING OUTCOMES ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT STUDENTS GAIN</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Learning Outcomes
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+                <div style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Improved Reading Ability</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children read with better understanding and enjoy exploring new books.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Better Writing Skills</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children learn to write clearly, organize thoughts, and express ideas effectively.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Stronger Vocabulary</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">A rich vocabulary helps children communicate better and understand more.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-left">
+                <div style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Confidence in Communication</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children speak with confidence in class, at home, and with friends.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Grammar Understanding</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Solid grammar foundation helps children avoid common mistakes and write correctly.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Love for Learning</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children develop a positive attitude toward English and learning in general.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 8: CALL TO ACTION ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #0B3C73 0%, #082A52 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; background: #F26B1D; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFC845; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">
+                    Start Your Child's <span style="color: #FFC845;">English Learning</span> Journey
+                </h2>
+                
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto 30px;">
+                    Give your child the gift of strong English skills. Help them read with understanding, write with confidence, and communicate clearly.
+                </p>
+                
+                <a href="/enroll/" class="btn" style="background: #F26B1D; color: white; padding: 16px 45px; border-radius: 60px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-block; box-shadow: 0 15px 30px rgba(242, 107, 29, 0.3); transition: all 0.3s ease;">
+                    <i class="fas fa-graduation-cap me-2"></i>Enroll Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        h2 {
+            font-size: 2rem !important;
+        }
+        
+        h3 {
+            font-size: 1.3rem !important;
+        }
+        
+        p {
+            font-size: 0.95rem !important;
+        }
+        
+        [style*="padding: 30px;"] {
+            padding: 25px 20px !important;
+        }
+        
+        .btn {
+            padding: 14px 35px !important;
+            font-size: 1rem !important;
+            width: 100%;
+        }
+        
+        .btn[style*="background: #F26B1D"] {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        .btn {
+            padding: 12px 30px !important;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #D95A12 !important;
+            box-shadow: 0 20px 35px rgba(242, 107, 29, 0.4) !important;
+        }
+    }
+</style>
+
+{% endblock %}

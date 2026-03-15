@@ -1,0 +1,113 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="{% url 'website:home' %}">
+    <img src="{% static 'images/ps_logo1.png' %}" class="logo-img" alt="Pustak Sutra">
+    <span class="brand-name">Pustak Sutra</span>
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+
+<ul class="navbar-nav ms-auto align-items-lg-center">
+
+<li class="nav-item">
+<a class="nav-link {% if active_page == 'home' %}active{% endif %}" href="{% url 'website:home' %}">
+Home
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="{% url 'website:about' %}">
+About
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link {% if active_page == 'courses' %}active{% endif %}" href="{% url 'website:courses' %}">
+Courses
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{% url 'website:contact' %}">
+Contact
+</a>
+</li>
+
+<li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+<a href="https://wa.me/919875643130" target="_blank" class="enroll-btn">
+Enroll Now
+</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<style>
+
+    /* LOGO */
+.logo-img{
+height:40px;
+margin-right:10px;
+}
+
+.brand-name{
+color:white;
+font-weight:700;
+font-size:1.5rem;
+}
+
+/* NAV LINKS */
+.navbar-custom .nav-link{
+color:rgba(255,255,255,0.9) !important;
+font-weight:500;
+margin:0 6px;
+transition:all .3s ease;
+}
+
+.navbar-custom .nav-link:hover{
+color:white !important;
+}
+
+/* ENROLL BUTTON */
+.enroll-btn{
+background:var(--gradient-orange);
+color:white;
+padding:10px 28px;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+transition:all .3s ease;
+box-shadow:0 6px 18px rgba(242,107,29,0.35);
+}
+
+.enroll-btn:hover{
+color:white;
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(242,107,29,0.45);
+}
+
+/* MOBILE */
+@media(max-width:991px){
+
+.navbar-nav{
+text-align:center;
+padding-top:15px;
+}
+
+.enroll-btn{
+display:block;
+width:100%;
+}
+
+}
+</style>

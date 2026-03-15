@@ -1,0 +1,702 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: COURSES HERO - Minimal & Bold ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; background: #EAF2FB; border-radius: 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: #FFE8DA; border-radius: 50%; opacity: 0.6; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #EAF2FB; padding: 8px 20px; border-radius: 50px;">
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 8px;"></span>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">LEARNING PROGRAMS</span>
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-left: 8px;"></span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                    Our <span style="color: #F26B1D; position: relative; display: inline-block;">Courses
+                    <svg width="100%" height="15" viewBox="0 0 150 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 40 0, 80 10 T 150 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p style="color: #475569; font-size: 1.2rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    At Pustak Sutra, we provide strong foundational learning for young minds. Our carefully designed programs help students from LKG to Class 8 build confidence, develop essential skills, and discover the joy of learning.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: COURSE OVERVIEW - Fixed Icon+Title Side by Side ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Mathematics Card - Left Accent Design -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 15px 30px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0; height: 100%; position: relative;">
+                    <!-- Colored Side Bar -->
+                    <div style="position: absolute; top: 0; left: 0; width: 6px; height: 100%; background: #0B3C73;"></div>
+                    
+                    <div style="padding: 30px 25px;">
+                        <!-- Icon and Title Side by Side -->
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-calculator" style="color: #0B3C73; font-size: 2rem;"></i>
+                            </div>
+                            <h3 style="color: #0B3C73; font-size: 1.8rem; font-weight: 700; margin: 0;">Mathematics</h3>
+                        </div>
+                        
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Build strong numerical foundations through conceptual understanding and problem-solving. Our math program makes numbers come alive.
+                        </p>
+                        
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 30px; height: 2px; background: #F26B1D;"></span>
+                            <span style="color: #F26B1D; font-weight: 600; font-size: 0.9rem;">KEY BENEFIT</span>
+                        </div>
+                        
+                        <p style="color: #0B3C73; font-weight: 500; margin-top: 8px;">Develop logical thinking & numerical confidence</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- English Card - Top Accent Design -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 15px 30px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0; height: 100%; position: relative;">
+                    <!-- Colored Top Bar -->
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: #F26B1D;"></div>
+                    
+                    <div style="padding: 30px 25px;">
+                        <!-- Icon and Title Side by Side -->
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <div style="width: 60px; height: 60px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-book-open" style="color: #F26B1D; font-size: 2rem;"></i>
+                            </div>
+                            <h3 style="color: #0B3C73; font-size: 1.8rem; font-weight: 700; margin: 0;">English</h3>
+                        </div>
+                        
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Develop strong communication skills through reading, writing, and speaking. We help children find their voice and express with confidence.
+                        </p>
+                        
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 30px; height: 2px; background: #F26B1D;"></span>
+                            <span style="color: #F26B1D; font-weight: 600; font-size: 0.9rem;">KEY BENEFIT</span>
+                        </div>
+                        
+                        <p style="color: #0B3C73; font-weight: 500; margin-top: 8px;">Build language skills & creative expression</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Logical Thinking Card - Bottom Accent Design -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 15px 30px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0; height: 100%; position: relative;">
+                    <!-- Colored Bottom Bar -->
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 6px; background: #FFC845;"></div>
+                    
+                    <div style="padding: 30px 25px;">
+                        <!-- Icon and Title Side by Side -->
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <div style="width: 60px; height: 60px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-brain" style="color: #FFC845; font-size: 2rem;"></i>
+                            </div>
+                            <h3 style="color: #0B3C73; font-size: 1.6rem; font-weight: 700; margin: 0; line-height: 1.2;">Logical Thinking & Problem Solving</h3>
+                        </div>
+                        
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Develop critical thinking skills through puzzles, reasoning exercises, and structured problem-solving activities.
+                        </p>
+                        
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 30px; height: 2px; background: #F26B1D;"></span>
+                            <span style="color: #F26B1D; font-weight: 600; font-size: 0.9rem;">KEY BENEFIT</span>
+                        </div>
+                        
+                        <p style="color: #0B3C73; font-weight: 500; margin-top: 8px;">Enhance reasoning & analytical thinking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: WHAT STUDENTS WILL LEARN - Timeline Style ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">SKILLS DEVELOPMENT</span>
+            <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                What Students Will Learn
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+            </h2>
+        </div>
+        
+        <div class="row g-5">
+            <!-- Mathematics Skills - Left Timeline -->
+            <div class="col-md-4" data-aos="fade-right">
+                <div style="position: relative; padding-left: 30px;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: #0B3C73;"></div>
+                    
+                    <div style="position: relative; margin-bottom: 25px;">
+                        <div style="position: absolute; left: -36px; top: 5px; width: 12px; height: 12px; background: #0B3C73; border-radius: 50%; border: 2px solid #FFFFFF; box-shadow: 0 0 0 2px #0B3C73;"></div>
+                        <h4 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 15px;">Mathematics</h4>
+                    </div>
+                    
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Number sense & operations</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Problem-solving strategies</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Logical reasoning</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Mental math abilities</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Real-world application</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- English Skills - Center Timeline -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div style="position: relative; padding-left: 30px;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: #F26B1D;"></div>
+                    
+                    <div style="position: relative; margin-bottom: 25px;">
+                        <div style="position: absolute; left: -36px; top: 5px; width: 12px; height: 12px; background: #F26B1D; border-radius: 50%; border: 2px solid #FFFFFF; box-shadow: 0 0 0 2px #F26B1D;"></div>
+                        <h4 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 15px;">English</h4>
+                    </div>
+                    
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Grammar fundamentals</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Reading comprehension</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Creative writing</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Vocabulary building</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Communication skills</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Logical Thinking Skills - Right Timeline -->
+            <div class="col-md-4" data-aos="fade-left">
+                <div style="position: relative; padding-left: 30px;">
+                    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: #FFC845;"></div>
+                    
+                    <div style="position: relative; margin-bottom: 25px;">
+                        <div style="position: absolute; left: -36px; top: 5px; width: 12px; height: 12px; background: #FFC845; border-radius: 50%; border: 2px solid #FFFFFF; box-shadow: 0 0 0 2px #FFC845;"></div>
+                        <h4 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 15px;">Logical Thinking</h4>
+                    </div>
+                    
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Pattern recognition</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Critical thinking</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Analytical reasoning</span>
+                        </li>
+                        <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Decision making</span>
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 10px;">
+                            <span style="width: 6px; height: 6px; background: #F26B1D; border-radius: 50%;"></span>
+                            <span style="color: #475569;">Creative problem solving</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 4: TEACHING APPROACH - New Unique Design ===== -->
+<section class="py-5" style="background-color: #FFFFFF; position: relative; overflow: hidden;">
+    <!-- Decorative Background -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+        <div style="position: absolute; top: 10%; right: 5%; width: 150px; height: 150px; background: #EAF2FB; border-radius: 40% 60% 50% 50%; opacity: 0.3;"></div>
+        <div style="position: absolute; bottom: 10%; left: 5%; width: 120px; height: 120px; background: #FFE8DA; border-radius: 60% 40% 50% 50%; opacity: 0.3;"></div>
+    </div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">HOW WE TEACH</span>
+            <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                Our Teaching Approach
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+            </h2>
+        </div>
+        
+        <!-- Unique Grid Layout -->
+        <div class="row g-4">
+            <!-- Approach 1 - Pill Shape -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="display: flex; align-items: center; background: white; border-radius: 100px 20px 20px 100px; padding: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #0B3C73; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                        <i class="fas fa-brain" style="color: white; font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 5px;">Concept-Based Learning</h4>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin: 0;">Deep understanding over memorization. Children learn the 'why' behind concepts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Approach 2 - Pill Shape -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="display: flex; align-items: center; background: white; border-radius: 20px 100px 100px 20px; padding: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #F26B1D; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                        <i class="fas fa-gamepad" style="color: white; font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 5px;">Activity-Based Teaching</h4>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin: 0;">Hands-on activities and games make learning engaging and memorable.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Approach 3 - Pill Shape -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="display: flex; align-items: center; background: white; border-radius: 100px 20px 20px 100px; padding: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFC845; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                        <i class="fas fa-stairs" style="color: white; font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 5px;">Step-by-Step Learning</h4>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin: 0;">Complex topics broken into simple, manageable steps that build confidence.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Approach 4 - Pill Shape -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="display: flex; align-items: center; background: white; border-radius: 20px 100px 100px 20px; padding: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #0B3C73; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                        <i class="fas fa-question-circle" style="color: white; font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 5px;">Encouraging Curiosity</h4>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin: 0;">A safe space where questions are welcome and curiosity is celebrated.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Approach 5 - Pill Shape -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div style="display: flex; align-items: center; background: white; border-radius: 100px 20px 20px 100px; padding: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #F26B1D; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                        <i class="fas fa-users" style="color: white; font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 5px;">Personal Attention</h4>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin: 0;">Small batch sizes ensure every child gets the support they deserve.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Approach 6 - Pill Shape -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="350">
+                <div style="display: flex; align-items: center; background: white; border-radius: 20px 100px 100px 20px; padding: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFC845; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0;">
+                        <i class="fas fa-clock" style="color: white; font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 5px;">Regular Practice</h4>
+                        <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin: 0;">Consistent practice and gentle assessments track progress without pressure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 5: COURSE HIGHLIGHTS - Fixed Icon+Title Layout ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT MAKES US SPECIAL</span>
+            <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                Course Highlights
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+            </h2>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Highlight 1 - Fixed: Icon and title on same line -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-layer-group" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Strong Foundation Building</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">We focus on core concepts that create a solid academic foundation for future learning.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-gamepad" style="color: #F26B1D; font-size: 1.3rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Interactive Learning</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">Engaging activities and games make learning enjoyable and help concepts stick.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-user-check" style="color: #FFC845; font-size: 1.3rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Personal Attention</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">Small batch sizes ensure every child receives the attention they deserve.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-chart-line" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Confidence Development</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">We celebrate every achievement, helping children believe in their abilities.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-puzzle-piece" style="color: #F26B1D; font-size: 1.3rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Skill-Based Learning</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">We focus on developing essential skills that go beyond textbooks.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 6 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-lightbulb" style="color: #FFC845; font-size: 1.3rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Curiosity Driven</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">We encourage questions and nurture natural curiosity in every child.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 6: LEARNING OUTCOMES - Split Layout ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+                <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem; display: block; margin-bottom: 10px;">WHAT STUDENTS GAIN</span>
+                
+                <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; position: relative; padding-bottom: 15px;">
+                    Learning Outcomes
+                    <span style="position: absolute; bottom: 0; left: 0; width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                </h2>
+                
+                <p style="color: #475569; font-size: 1rem; line-height: 1.7; margin-bottom: 30px;">
+                    After completing our courses, students will have developed:
+                </p>
+                
+                <div style="margin-bottom: 15px;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 15px;"></span>
+                        <span style="color: #1E293B; font-size: 1rem;">Strong foundational knowledge in core subjects</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 15px;"></span>
+                        <span style="color: #1E293B; font-size: 1rem;">Improved problem-solving and critical thinking abilities</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 15px;"></span>
+                        <span style="color: #1E293B; font-size: 1rem;">Enhanced communication and language skills</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 15px;"></span>
+                        <span style="color: #1E293B; font-size: 1rem;">Greater confidence in approaching new challenges</span>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 15px;"></span>
+                        <span style="color: #1E293B; font-size: 1rem;">A genuine love for learning that lasts a lifetime</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-left">
+                <div style="background: linear-gradient(135deg, #EAF2FB 0%, #FFE8DA 100%); border-radius: 40px; padding: 40px; position: relative;">
+                    <div style="position: absolute; top: -15px; right: 20px; width: 60px; height: 60px; background: #F26B1D; border-radius: 30px; transform: rotate(15deg); opacity: 0.2;"></div>
+                    <div style="position: absolute; bottom: -15px; left: 20px; width: 80px; height: 80px; background: #0B3C73; border-radius: 40px; transform: rotate(-10deg); opacity: 0.2;"></div>
+                    
+                    <h4 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; position: relative; z-index: 2;">Skills That Last a Lifetime</h4>
+                    
+                    <div style="position: relative; z-index: 2;">
+                        <div style="background: white; border-radius: 20px; padding: 20px; margin-bottom: 15px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                <i class="fas fa-check-circle" style="color: #F26B1D;"></i>
+                                <span style="color: #0B3C73; font-weight: 600;">Academic Excellence</span>
+                            </div>
+                            <p style="color: #475569; font-size: 0.9rem; margin: 0;">Strong performance in school and beyond</p>
+                        </div>
+                        
+                        <div style="background: white; border-radius: 20px; padding: 20px; margin-bottom: 15px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                <i class="fas fa-check-circle" style="color: #F26B1D;"></i>
+                                <span style="color: #0B3C73; font-weight: 600;">Critical Thinking</span>
+                            </div>
+                            <p style="color: #475569; font-size: 0.9rem; margin: 0;">Ability to analyze and solve problems independently</p>
+                        </div>
+                        
+                        <div style="background: white; border-radius: 20px; padding: 20px;">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                                <i class="fas fa-check-circle" style="color: #F26B1D;"></i>
+                                <span style="color: #0B3C73; font-weight: 600;">Lifelong Learning</span>
+                            </div>
+                            <p style="color: #475569; font-size: 0.9rem; margin: 0;">A genuine curiosity that drives continuous growth</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 7: WHY OUR COURSES ARE DIFFERENT - Feature Grid ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">THE PUSTAK SUTRA DIFFERENCE</span>
+            <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                Why Our Courses Are Different
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 150px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+            </h2>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Difference 1 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="display: flex; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-brain" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Focus on Understanding, Not Memorization</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">We teach children to understand concepts deeply, not just memorize facts for tests.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Difference 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="display: flex; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-heart" style="color: #F26B1D; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Nurturing Environment</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">We create a safe, encouraging space where children feel comfortable asking questions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Difference 3 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="display: flex; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-users" style="color: #FFC845; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Small Batch Sizes</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">Limited students per batch ensure personalized attention for every child.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Difference 4 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="display: flex; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-chart-simple" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Progress Tracking</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.5;">Regular updates and assessments help parents track their child's growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        h2 {
+            font-size: 2rem !important;
+        }
+        
+        h3 {
+            font-size: 1.5rem !important;
+        }
+        
+        p {
+            font-size: 0.95rem !important;
+        }
+        
+        /* Course cards on mobile */
+        [style*="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;"] {
+            gap: 12px !important;
+        }
+        
+        [style*="width: 60px; height: 60px;"] {
+            width: 50px !important;
+            height: 50px !important;
+        }
+        
+        [style*="width: 60px; height: 60px;"] i {
+            font-size: 1.5rem !important;
+        }
+        
+        h3 {
+            font-size: 1.3rem !important;
+        }
+        
+        /* Teaching approach on mobile */
+        [style*="border-radius: 100px 20px 20px 100px;"],
+        [style*="border-radius: 20px 100px 100px 20px;"] {
+            flex-direction: column;
+            text-align: center;
+            border-radius: 30px !important;
+        }
+        
+        [style*="width: 60px; height: 60px; background:"] {
+            margin-right: 0 !important;
+            margin-bottom: 15px;
+        }
+        
+        /* Timeline */
+        [style*="padding-left: 30px;"] {
+            padding-left: 25px !important;
+        }
+        
+        [style*="left: -36px;"] {
+            left: -31px !important;
+        }
+        
+        /* Highlight cards */
+        [style*="display: flex; align-items: center; gap: 12px;"] {
+            gap: 10px !important;
+        }
+        
+        [style*="width: 45px; height: 45px;"] {
+            width: 40px !important;
+            height: 40px !important;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        h3 {
+            font-size: 1.2rem !important;
+        }
+        
+        [style*="width: 60px; height: 60px;"] {
+            width: 45px !important;
+            height: 45px !important;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        [style*="background: white; border-radius: 30px;"]:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 40px rgba(11, 60, 115, 0.15) !important;
+        }
+        
+        /* Teaching approach hover */
+        [style*="border-radius: 100px 20px 20px 100px;"]:hover,
+        [style*="border-radius: 20px 100px 100px 20px;"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(11, 60, 115, 0.1) !important;
+        }
+    }
+</style>
+
+{% endblock %}

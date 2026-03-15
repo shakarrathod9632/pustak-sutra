@@ -1,0 +1,1286 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: HERO - Enhanced with Rich Content ===== -->
+<section class="hero-section" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); padding: 20px 0 60px; position: relative; overflow: hidden;">
+    <!-- Decorative Background Elements -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: #EAF2FB; border-radius: 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: #FFE8DA; border-radius: 50%; opacity: 0.6; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                <!-- Welcome Badge -->
+                <div class="d-inline-flex align-items-center mb-3" style="background: #EAF2FB; padding: 8px 18px; border-radius: 50px;">
+                    <i class="fas fa-graduation-cap" style="color: #F26B1D; margin-right: 8px;"></i>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">Welcome to Pustak Sutra</span>
+                </div>
+                
+                <h1 class="hero-title" style="font-size: 3rem; line-height: 1.2; color: #0B3C73; font-weight: 800; margin-bottom: 15px;">
+                    Where Learning <br>Becomes <span style="color: #F26B1D; position: relative; display: inline-block;">Adventure!
+                    <svg width="100%" height="15" viewBox="0 0 200 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 50 0, 100 10 T 200 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p class="hero-subtitle" style="font-size: 1.1rem; color: #475569; line-height: 1.6; margin-bottom: 25px; max-width: 500px;">
+                    Give your child the gift of quality education from LKG to Class 8 with our fun, interactive, and activity-based learning programs. Watch them grow, explore, and excel!
+                </p>
+                
+                <!-- Feature Pills - NEW -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 15px; border-radius: 50px; font-size: 0.85rem; color: #0B3C73; font-weight: 500;">
+                        <i class="fas fa-check-circle" style="color: #F26B1D; margin-right: 5px;"></i>LKG to Class 8
+                    </span>
+                    <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 15px; border-radius: 50px; font-size: 0.85rem; color: #0B3C73; font-weight: 500;">
+                        <i class="fas fa-check-circle" style="color: #F26B1D; margin-right: 5px;"></i>Activity Based
+                    </span>
+                    <span style="background: #FFFFFF; border: 1px solid #E2E8F0; padding: 6px 15px; border-radius: 50px; font-size: 0.85rem; color: #0B3C73; font-weight: 500;">
+                        <i class="fas fa-check-circle" style="color: #F26B1D; margin-right: 5px;"></i>Small Batches
+                    </span>
+                  
+                </div>
+                
+                <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                    <a href="https://wa.me/9199495950995" class="btn btn-primary-custom" style="background: #F26B1D; color: white; padding: 14px 30px; border-radius: 50px; font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-block; text-align: center; box-shadow: 0 10px 25px rgba(242, 107, 29, 0.3);">
+                        <i class="fas fa-calendar-check me-2"></i>Book Free Demo
+                    </a>
+                    <a href="/courses/" class="btn btn-outline-custom" style="background: transparent; color: #0B3C73; border: 2px solid #0B3C73; padding: 14px 30px; border-radius: 50px; font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-block; text-align: center;">
+                        Explore Courses
+                    </a>
+                </div>
+                
+             
+            </div>
+            
+            <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0" data-aos="fade-left">
+                <div class="hero-image-wrapper" style="position: relative; text-align: center;">
+                    <!-- Decorative Elements -->
+                    <div style="position: absolute; top: -20px; right: 20px; width: 80px; height: 80px; background: #F26B1D; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+                    <div style="position: absolute; bottom: 10px; left: 20px; width: 100px; height: 100px; background: #0B3C73; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+                    
+                    <img src="{% static 'images/home_img.webp' %}" 
+                         alt="Children Learning" 
+                         class="img-fluid"
+                         style="max-width: 100%; height: auto; ">
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: OUR COURSES - Professional & Polished Design ===== -->
+<section class="py-5" style="background-color: #F8FAFC; position: relative; overflow: hidden;">
+    <!-- Decorative Background Elements -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: #EAF2FB; border-radius: 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: #FFE8DA; border-radius: 50%; opacity: 0.6; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+        <!-- Section Header with Unique Design -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <div class="d-inline-flex align-items-center justify-content-center mb-3">
+                <div style="width: 40px; height: 2px; background: #F26B1D; margin-right: 15px;"></div>
+                <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem; text-transform: uppercase;">What We Teach</span>
+                <div style="width: 40px; height: 2px; background: #F26B1D; margin-left: 15px;"></div>
+            </div>
+            
+            <h2 class="display-5 fw-bold" style="color: #0B3C73; font-size: 2.5rem; margin-bottom: 15px; line-height: 1.2;">
+                Explore Our <span style="color: #F26B1D; position: relative; display: inline-block;">Learning Programs
+                <svg width="100%" height="12" viewBox="0 0 200 12" style="position: absolute; bottom: -5px; left: 0;">
+                    <path d="M0 8 Q 50 0, 100 8 T 200 8" stroke="#FFC845" stroke-width="4" fill="none"/>
+                </svg>
+                </span>
+            </h2>
+        </div>
+
+        <!-- Course Cards - Professional Grid Layout -->
+        <div class="row g-4 justify-content-center">
+            <!-- English Card - First -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="course-card-new" style="background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 35px rgba(11, 60, 115, 0.08); height: 100%; transition: all 0.4s ease; border: 1px solid #E2E8F0; position: relative;">
+                    <!-- Colored Top Bar -->
+                    <div style="height: 8px; background: linear-gradient(90deg, #FFC845 0%, #F26B1D 100%);"></div>
+                    
+                    <!-- Age Tag - Positioned at Top Right Corner (Fixed) -->
+                    <div style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+                        <span style="background: #EAF2FB; color: #0B3C73; padding: 6px 16px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3px; box-shadow: 0 4px 10px rgba(11, 60, 115, 0.08); display: inline-block;">
+                            <i class="fas fa-graduation-cap me-1" style="font-size: 0.7rem;"></i> LKG - Class 8
+                        </span>
+                    </div>
+                    
+                    <div style="padding: 30px 25px 25px;">
+                        <!-- Icon and Title Row - Better Alignment -->
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <div style="width: 70px; height: 70px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; transform: rotate(5deg); transition: transform 0.3s ease; flex-shrink: 0;">
+                                <i class="fas fa-book-open" style="color: #FFC845; font-size: 2rem; transform: rotate(-5deg);"></i>
+                            </div>
+                            <h3 style="color: #0B3C73; font-size: 2rem; font-weight: 700; margin: 0; line-height: 1.2;">English</h3>
+                        </div>
+                        
+                        <!-- Subject Tagline -->
+                        <p style="color: #F26B1D; font-weight: 500; font-size: 0.9rem; margin-bottom: 15px; letter-spacing: 0.3px;">
+                            <i class="fas fa-quote-left me-1" style="font-size: 0.7rem;"></i> Language of expression
+                        </p>
+                        
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Build strong communication skills through stories, poems, creative writing, and grammar activities designed for you.
+                        </p>
+                        
+                        <!-- Quick Features - 2 Column Grid with Better Spacing -->
+                        <div class="row g-2 mb-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Grammar</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Creative Writing</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Reading</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Communication</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Button -->
+                        <a href="/english/" class="btn w-100" style="background: #0B3C73; color: white; padding: 14px; border-radius: 50px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; border: none; cursor: pointer;">
+                            <span>Explore Program</span>
+                            <i class="fas fa-arrow-right ms-2" style="font-size: 0.9rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics Card - Second -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div class="course-card-new" style="background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 35px rgba(11, 60, 115, 0.08); height: 100%; transition: all 0.4s ease; border: 1px solid #E2E8F0; position: relative;">
+                    <!-- Colored Top Bar -->
+                    <div style="height: 8px; background: linear-gradient(90deg, #0B3C73 0%, #082A52 100%);"></div>
+                    
+                    <!-- Age Tag - Positioned at Top Right Corner -->
+                    <div style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+                        <span style="background: #FFE8DA; color: #F26B1D; padding: 6px 16px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3px; box-shadow: 0 4px 10px rgba(242, 107, 29, 0.08); display: inline-block;">
+                            <i class="fas fa-graduation-cap me-1" style="font-size: 0.7rem;"></i> LKG - Class 8
+                        </span>
+                    </div>
+                    
+                    <div style="padding: 30px 25px 25px;">
+                        <!-- Icon and Title Row -->
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <div style="width: 70px; height: 70px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; transform: rotate(-5deg); transition: transform 0.3s ease; flex-shrink: 0;">
+                                <i class="fas fa-calculator" style="color: #0B3C73; font-size: 2rem; transform: rotate(5deg);"></i>
+                            </div>
+                            <h3 style="color: #0B3C73; font-size: 2rem; font-weight: 700; margin: 0; line-height: 1.2;">Mathematics</h3>
+                        </div>
+                        
+                        <!-- Subject Tagline -->
+                        <p style="color: #F26B1D; font-weight: 500; font-size: 0.9rem; margin-bottom: 15px; letter-spacing: 0.3px;">
+                            <i class="fas fa-quote-left me-1" style="font-size: 0.7rem;"></i> Where numbers come alive
+                        </p>
+                        
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Make numbers fun with puzzles, games, and real-world problem-solving activities that build strong foundations.
+                        </p>
+                        
+                        <!-- Quick Features - 2 Column Grid -->
+                        <div class="row g-2 mb-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Vedic Math</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Puzzles</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Mental Math</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Problem Solving</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Button -->
+                        <a href="/mathematics/" class="btn w-100" style="background: #0B3C73; color: white; padding: 14px; border-radius: 50px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; border: none; cursor: pointer;">
+                            <span>Explore Program</span>
+                            <i class="fas fa-arrow-right ms-2" style="font-size: 0.9rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Card - Third -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="course-card-new" style="background: white; border-radius: 30px; overflow: hidden; box-shadow: 0 20px 35px rgba(11, 60, 115, 0.08); height: 100%; transition: all 0.4s ease; border: 1px solid #E2E8F0; position: relative;">
+                    <!-- Colored Top Bar -->
+                    <div style="height: 8px; background: linear-gradient(90deg, #F26B1D 0%, #D95A12 100%);"></div>
+                    
+                    <!-- Age Tag - Positioned at Top Right Corner -->
+                    <div style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+                        <span style="background: #EAF2FB; color: #0B3C73; padding: 6px 16px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3px; box-shadow: 0 4px 10px rgba(11, 60, 115, 0.08); display: inline-block;">
+                            <i class="fas fa-graduation-cap me-1" style="font-size: 0.7rem;"></i> LKG - Class 8
+                        </span>
+                    </div>
+                    
+                    <div style="padding: 30px 25px 25px;">
+                        <!-- Icon and Title Row -->
+                        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                            <div style="width: 70px; height: 70px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center; transform: rotate(5deg); transition: transform 0.3s ease; flex-shrink: 0;">
+                                <i class="fas fa-flask" style="color: #F26B1D; font-size: 2rem; transform: rotate(-5deg);"></i>
+                            </div>
+                            <h3 style="color: #0B3C73; font-size: 2rem; font-weight: 700; margin: 0; line-height: 1.2;">Logical Thinking</h3>
+                        </div>
+                        
+                        <!-- Subject Tagline -->
+                        <p style="color: #F26B1D; font-weight: 500; font-size: 0.9rem; margin-bottom: 15px; letter-spacing: 0.3px;">
+                            <i class="fas fa-quote-left me-1" style="font-size: 0.7rem;"></i> Curiosity meets discovery
+                        </p>
+                        
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                            Explore the wonders of science through simple experiments, nature studies, and hands-on activities that spark curiosity.
+                        </p>
+                        
+                        <!-- Quick Features - 2 Column Grid -->
+                        <div class="row g-2 mb-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Experiments</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Nature Studies</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Projects</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 0.8rem; margin-right: 6px;"></i>
+                                    <span style="color: #1E293B; font-size: 0.8rem;">Observation</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Button -->
+                        <a href="/logical_thinking/" class="btn w-100" style="background: #0B3C73; color: white; padding: 14px; border-radius: 50px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; border: none; cursor: pointer;">
+                            <span>Explore Program</span>
+                            <i class="fas fa-arrow-right ms-2" style="font-size: 0.9rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom CTA -->
+        <div class="text-center mt-2 pt-2" data-aos="fade-up">
+            <a href="/courses/" class="btn" style="background: transparent; color: #0B3C73; border: 2px solid #0B3C73; padding: 14px 45px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;">
+                View Complete Catalog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Mobile-First Styles for Courses Section */
+    @media (max-width: 576px) {
+        /* Section Header */
+        h2.display-5 {
+            font-size: 2rem !important;
+            padding: 0 5px;
+        }
+        
+        /* Course Cards */
+        .course-card-new {
+            border-radius: 25px !important;
+        }
+        
+        .course-card-new [style*="padding: 30px 25px 25px"] {
+            padding: 30px 20px 25px !important;
+        }
+        
+        /* Icon adjustments */
+        .course-card-new [style*="width: 70px; height: 70px"] {
+            width: 55px !important;
+            height: 55px !important;
+        }
+        
+        .course-card-new [style*="font-size: 2rem"] i {
+            font-size: 1.5rem !important;
+        }
+        
+        /* Title adjustments */
+        .course-card-new h3 {
+            font-size: 1.6rem !important;
+        }
+        
+        /* Age tag positioning for mobile */
+        .course-card-new [style*="position: absolute; top: 20px; right: 20px"] {
+            top: 15px !important;
+            right: 15px !important;
+        }
+        
+        .course-card-new [style*="position: absolute; top: 20px; right: 20px"] span {
+            padding: 5px 12px !important;
+            font-size: 0.7rem !important;
+        }
+        
+        /* Icon and title row */
+        .course-card-new [style*="display: flex; align-items: center; gap: 15px"] {
+            gap: 12px !important;
+            margin-bottom: 15px !important;
+        }
+        
+        /* Feature grid */
+        .course-card-new .row.g-2 {
+            margin-bottom: 15px !important;
+        }
+        
+        .course-card-new .col-6 span {
+            font-size: 0.75rem !important;
+        }
+        
+        /* Button */
+        .course-card-new .btn {
+            padding: 12px !important;
+            font-size: 0.9rem !important;
+        }
+        
+        /* Bottom CTA */
+        .text-center.mt-5 .btn {
+            padding: 12px 30px !important;
+            font-size: 0.95rem !important;
+            width: 90%;
+            max-width: 300px;
+        }
+        
+        /* Remove extra spacing */
+        .text-center.mt-5 {
+            margin-top: 30px !important;
+            padding-top: 0 !important;
+        }
+    }
+    
+    /* Small phones */
+    @media (max-width: 375px) {
+        h2.display-5 {
+            font-size: 1.8rem !important;
+        }
+        
+        .course-card-new h3 {
+            font-size: 1.5rem !important;
+        }
+        
+        .course-card-new [style*="width: 70px; height: 70px"] {
+            width: 50px !important;
+            height: 50px !important;
+        }
+        
+        /* Make features 2x2 grid even on smallest screens */
+        .course-card-new .col-6 {
+            width: 50%;
+        }
+        
+        .course-card-new .col-6 span {
+            font-size: 0.7rem !important;
+        }
+    }
+    
+    /* Tablet */
+    @media (min-width: 577px) and (max-width: 768px) {
+        h2.display-5 {
+            font-size: 2.2rem !important;
+        }
+        
+        .course-card-new {
+            margin-bottom: 0;
+        }
+        
+        /* Adjust card padding for tablet */
+        .course-card-new [style*="padding: 30px 25px 25px"] {
+            padding: 30px 20px 25px !important;
+        }
+    }
+    
+    /* Desktop hover effects */
+    @media (min-width: 992px) {
+        .course-card-new:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 45px rgba(11, 60, 115, 0.15) !important;
+        }
+        
+        .course-card-new:hover [style*="transform: rotate(5deg)"] {
+            transform: rotate(0deg) scale(1.1) !important;
+        }
+        
+        .course-card-new:hover [style*="transform: rotate(-5deg)"] {
+            transform: rotate(0deg) scale(1.1) !important;
+        }
+        
+        .course-card-new .btn:hover {
+            background: #F26B1D !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(242, 107, 29, 0.3);
+        }
+        
+        .text-center.mt-5 .btn:hover {
+            background: #0B3C73 !important;
+            color: white !important;
+            transform: translateY(-3px);
+            border-color: #0B3C73;
+        }
+    }
+    
+    /* Ensure proper spacing on all devices */
+    .course-card-new {
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    .course-card-new .btn {
+        transition: all 0.3s ease;
+        border: none;
+    }
+    
+    .course-card-new [style*="transform: rotate"] {
+        transition: all 0.4s ease;
+    }
+    
+    /* Remove any extra white space */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Fix for absolute positioned tag */
+    .course-card-new {
+        position: relative;
+    }
+</style>
+
+<!-- ===== SECTION 3: WHY PUSTAK SUTRA - Feature Pillars (Mobile Optimized) ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: 10%; left: 5%; width: 100px; height: 100px; background: #EAF2FB; border-radius: 30px; transform: rotate(45deg); opacity: 0.3; z-index: 0;"></div>
+    <div style="position: absolute; bottom: 10%; right: 5%; width: 150px; height: 150px; background: #FFE8DA; border-radius: 50%; opacity: 0.3; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <!-- Header -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <span style="background: #F26B1D; color: white; padding: 6px 20px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; display: inline-block; margin-bottom: 15px;">
+                ⚡ What Makes Us Special
+            </span>
+            <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; line-height: 1.2;">
+               Why to choose <span style="color: #F26B1D;">Pustak Sutra</span>
+            </h2>
+        </div>
+
+        <!-- Pillars Layout - 3x2 Grid with Icons -->
+        <div class="row g-4">
+            <!-- Pillar 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="pillar-item" style="display: flex; align-items: center; gap: 15px; background: white; padding: 20px; border-radius: 100px 20px 20px 100px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); border-left: 5px solid #0B3C73; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-user-tie" style="color: #0B3C73; font-size: 1.8rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 0; /* Prevents text overflow */">
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 3px;">Expert Teachers</h4>
+                        <p style="color: #475569; font-size: 0.85rem; line-height: 1.4; margin: 0; word-wrap: break-word;">Qualified & passionate educators</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pillar 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div class="pillar-item" style="display: flex; align-items: center; gap: 15px; background: white; padding: 20px; border-radius: 100px 20px 20px 100px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); border-left: 5px solid #F26B1D; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFE8DA; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-users" style="color: #F26B1D; font-size: 1.8rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 0;">
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 3px;">Small Batches</h4>
+                        <p style="color: #475569; font-size: 0.85rem; line-height: 1.4; margin: 0; word-wrap: break-word;">Max 8 students per class</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pillar 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="pillar-item" style="display: flex; align-items: center; gap: 15px; background: white; padding: 20px; border-radius: 100px 20px 20px 100px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); border-left: 5px solid #FFC845; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFF4CC; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-smile" style="color: #FFC845; font-size: 1.8rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 0;">
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 3px;">Fun Learning</h4>
+                        <p style="color: #475569; font-size: 0.85rem; line-height: 1.4; margin: 0; word-wrap: break-word;">Games & stories in every class</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pillar 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div class="pillar-item" style="display: flex; align-items: center; gap: 15px; background: white; padding: 20px; border-radius: 100px 20px 20px 100px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); border-left: 5px solid #0B3C73; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-clock" style="color: #0B3C73; font-size: 1.8rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 0;">
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 3px;">Flexible Timing</h4>
+                        <p style="color: #475569; font-size: 0.85rem; line-height: 1.4; margin: 0; word-wrap: break-word;">Morning & weekend batches</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pillar 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="pillar-item" style="display: flex; align-items: center; gap: 15px; background: white; padding: 20px; border-radius: 100px 20px 20px 100px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); border-left: 5px solid #F26B1D; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFE8DA; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-chart-simple" style="color: #F26B1D; font-size: 1.8rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 0;">
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 3px;">Progress Updates</h4>
+                        <p style="color: #475569; font-size: 0.85rem; line-height: 1.4; margin: 0; word-wrap: break-word;">Weekly feedback & reports</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pillar 6 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                <div class="pillar-item" style="display: flex; align-items: center; gap: 15px; background: white; padding: 20px; border-radius: 100px 20px 20px 100px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); border-left: 5px solid #FFC845; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFF4CC; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <i class="fas fa-heart" style="color: #FFC845; font-size: 1.8rem;"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 0;">
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 3px;">Loving Environment</h4>
+                        <p style="color: #475569; font-size: 0.85rem; line-height: 1.4; margin: 0; word-wrap: break-word;">Safe & nurturing space</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Responsive Styles - Add this at the end of your file -->
+<style>
+    /* Mobile-First Responsive Styles - Design Preserved, Layout Perfected */
+    @media (max-width: 768px) {
+        /* Container padding for mobile */
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        /* Header adjustments */
+        h2 {
+            font-size: 2rem !important;
+            padding: 0 5px;
+        }
+        
+        .text-center span {
+            font-size: 0.8rem !important;
+            padding: 5px 16px !important;
+        }
+        
+        /* Pillar items - Perfect for mobile */
+        .pillar-item {
+            padding: 15px !important;
+            gap: 12px !important;
+            border-radius: 50px 15px 15px 50px !important; /* Slightly smaller radius for mobile */
+        }
+        
+        /* Icon size adjustment */
+        .pillar-item div[style*="width: 60px; height: 60px;"] {
+            width: 50px !important;
+            height: 50px !important;
+            flex-shrink: 0;
+        }
+        
+        .pillar-item div[style*="width: 60px; height: 60px;"] i {
+            font-size: 1.5rem !important;
+        }
+        
+        /* Text adjustments */
+        .pillar-item h4 {
+            font-size: 1.1rem !important;
+            margin-bottom: 2px !important;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+        
+        .pillar-item p {
+            font-size: 0.8rem !important;
+            line-height: 1.3 !important;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+        
+        /* Ensure text container doesn't overflow */
+        .pillar-item div[style*="flex: 1;"] {
+            min-width: 0;
+            width: auto;
+        }
+        
+        /* Gap between rows */
+        .row.g-4 {
+            --bs-gutter-y: 1rem;
+        }
+    }
+    
+    /* Small phones (under 375px) */
+    @media (max-width: 375px) {
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        .pillar-item {
+            padding: 12px !important;
+            gap: 10px !important;
+        }
+        
+        .pillar-item div[style*="width: 60px; height: 60px;"] {
+            width: 45px !important;
+            height: 45px !important;
+        }
+        
+        .pillar-item div[style*="width: 60px; height: 60px;"] i {
+            font-size: 1.3rem !important;
+        }
+        
+        .pillar-item h4 {
+            font-size: 1rem !important;
+        }
+        
+        .pillar-item p {
+            font-size: 0.75rem !important;
+        }
+    }
+    
+    /* Medium phones (376px - 425px) */
+    @media (min-width: 376px) and (max-width: 425px) {
+        .pillar-item {
+            padding: 14px !important;
+        }
+        
+        .pillar-item h4 {
+            font-size: 1.05rem !important;
+        }
+    }
+    
+    /* Tablets */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .container {
+            padding-left: 25px !important;
+            padding-right: 25px !important;
+        }
+        
+        .pillar-item {
+            padding: 18px !important;
+        }
+        
+        .pillar-item h4 {
+            font-size: 1.15rem !important;
+        }
+    }
+    
+    /* Ensure consistent height on desktop */
+    @media (min-width: 992px) {
+        .pillar-item {
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .pillar-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 15px 30px rgba(11, 60, 115, 0.15);
+        }
+    }
+    
+    /* Fix for very long words */
+    .pillar-item p, .pillar-item h4 {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    /* Ensure icons never shrink */
+    .pillar-item div[style*="flex-shrink: 0;"] {
+        flex-shrink: 0 !important;
+    }
+</style>
+
+
+<!-- ===== SECTION 4: OUR MISSION - Premium Design ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Background Elements -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+        <div style="position: absolute; top: 5%; left: 2%; width: 150px; height: 150px; background: #EAF2FB; border-radius: 50%; opacity: 0.4; z-index: 0;"></div>
+        <div style="position: absolute; bottom: 5%; right: 2%; width: 200px; height: 200px; background: #FFE8DA; border-radius: 50%; opacity: 0.4; z-index: 0;"></div>
+        <div style="position: absolute; top: 40%; right: 10%; width: 80px; height: 80px; background: #FFF4CC; border-radius: 30px; transform: rotate(45deg); opacity: 0.3; z-index: 0;"></div>
+    </div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row g-5 align-items-center">
+            <!-- Image Column - Left Side (with natural blending) -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <div style="position: relative;">
+                    <!-- Blended Background Elements -->
+                    <div style="position: absolute; top: -20px; left: -20px; width: 150px; height: 150px; background: linear-gradient(135deg, #F26B1D 0%, #FFC845 100%); border-radius: 50% 20% 50% 30%; opacity: 0.1; z-index: 0;"></div>
+                    <div style="position: absolute; bottom: -30px; right: -30px; width: 180px; height: 180px; background: linear-gradient(135deg, #0B3C73 0%, #082A52 100%); border-radius: 30% 50% 20% 50%; opacity: 0.08; z-index: 0;"></div>
+                    
+                    <!-- Image Container with Organic Shape -->
+                    <div style="position: relative; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; overflow: hidden; box-shadow: 0 30px 40px -20px rgba(11, 60, 115, 0.3); transform: rotate(1deg); transition: transform 0.5s ease;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(242,107,29,0.1) 0%, rgba(255,200,69,0.1) 100%); z-index: 1; pointer-events: none;"></div>
+                        <img src="{% static 'images/about.webp' %}" 
+                             alt="Our Mission" 
+                             class="img-fluid"
+                             style="width: 100%; height: auto; display: block; transform: scale(1.02); transition: transform 0.7s ease; filter: brightness(1.02) contrast(1.02);">
+                    </div>
+                    
+                    <!-- Floating Accent Element -->
+                    <div style="position: absolute; bottom: 10px; left: 10px; width: 60px; height: 60px; background: #F26B1D; border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%; opacity: 0.15; z-index: 1;"></div>
+                    <div style="position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; background: #FFC845; border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%; opacity: 0.15; z-index: 1;"></div>
+                </div>
+            </div>
+            
+            <!-- Content Column - Right Side -->
+            <div class="col-lg-6" data-aos="fade-left">
+                <!-- Section Badge -->
+                <div style="display: inline-flex; align-items: center; gap: 10px; background: #EAF2FB; padding: 8px 20px; border-radius: 50px; margin-bottom: 20px;">
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%;"></span>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem; letter-spacing: 0.5px;">OUR STORY</span>
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%;"></span>
+                </div>
+                
+                <!-- Main Heading with Decorative Element -->
+                <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 20px; position: relative;">
+                    Our Mission: 
+                    <span style="color: #F26B1D; position: relative; display: inline-block;">
+                        Transform Learning
+                        <svg width="100%" height="10" viewBox="0 0 200 10" style="position: absolute; bottom: -5px; left: 0;">
+                            <path d="M0 5 Q 50 0, 100 5 T 200 5" stroke="#FFC845" stroke-width="4" fill="none"/>
+                        </svg>
+                    </span>
+                    <br>for Every Child
+                </h2>
+                
+                <!-- Content with subtle dividers -->
+                <div style="margin-bottom: 25px;">
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.7; margin-bottom: 20px; position: relative; padding-left: 15px; border-left: 3px solid #F26B1D;">
+                        At Pustak Sutra, we believe every child deserves an education that nurtures their curiosity and builds a strong foundation for life. We specialize in students from LKG to Class 8, focusing on Mathematics, Science, and English.
+                    </p>
+                    
+                    <p style="color: #475569; font-size: 1rem; line-height: 1.7; margin-bottom: 25px; padding-left: 15px;">
+                        Our approach combines traditional values with modern teaching methods to create an engaging, effective, and joyful learning environment where children love to learn.
+                    </p>
+                </div>
+                
+                <!-- Enhanced Button with Premium Hover -->
+                <a href="/about/" class="mission-btn" style="background: #0B3C73; color: white; padding: 16px 38px; border-radius: 60px; font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.2); border: 2px solid transparent; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                    <span style="position: relative; z-index: 2;">Learn More About Us</span>
+                    <i class="fas fa-arrow-right" style="position: relative; z-index: 2; transition: transform 0.3s ease;"></i>
+                    <span style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #F26B1D; transition: left 0.4s ease; z-index: 1;"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile & Interactive Styles -->
+<style>
+    /* Button Hover Effect - Desktop */
+    .mission-btn {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .mission-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 30px rgba(242, 107, 29, 0.3);
+        border-color: #F26B1D;
+    }
+    
+    .mission-btn:hover span:not(.mission-btn span:last-child) {
+        color: white;
+    }
+    
+    .mission-btn:hover i {
+        transform: translateX(5px);
+        color: white;
+    }
+    
+    .mission-btn:hover span:last-child {
+        left: 0;
+    }
+    
+    /* Image Hover Effect - Desktop */
+    @media (min-width: 992px) {
+        [style*="border-radius: 30% 70% 70% 30%"]:hover {
+            transform: rotate(0deg) scale(1.02);
+            box-shadow: 0 40px 50px -20px rgba(11, 60, 115, 0.4);
+        }
+        
+        [style*="border-radius: 30% 70% 70% 30%"]:hover img {
+            transform: scale(1.05);
+        }
+    }
+    
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        /* Container padding */
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        /* Heading adjustments */
+        h2 {
+            font-size: 2rem !important;
+            line-height: 1.3 !important;
+        }
+        
+        /* Badge adjustments */
+        [style*="padding: 8px 20px; border-radius: 50px;"] {
+            padding: 6px 16px !important;
+            margin-bottom: 15px !important;
+        }
+        
+        [style*="padding: 8px 20px; border-radius: 50px;"] span {
+            font-size: 0.8rem !important;
+        }
+        
+        /* Content adjustments */
+        p {
+            font-size: 0.95rem !important;
+            line-height: 1.6 !important;
+            padding-left: 12px !important;
+        }
+        
+        /* Image container adjustments */
+        [style*="border-radius: 30% 70% 70% 30%"] {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        /* Button adjustments */
+        .mission-btn {
+            padding: 14px 30px !important;
+            font-size: 0.95rem !important;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        /* Remove large decorative elements on mobile */
+        [style*="width: 150px; height: 150px;"] {
+            width: 80px !important;
+            height: 80px !important;
+        }
+        
+        [style*="width: 200px; height: 200px;"] {
+            width: 100px !important;
+            height: 100px !important;
+        }
+        
+        /* Order of content - image on top for mobile */
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .col-lg-6:first-child {
+            margin-top: 30px;
+        }
+    }
+    
+    /* Small phones */
+    @media (max-width: 375px) {
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        p {
+            font-size: 0.9rem !important;
+            padding-left: 10px !important;
+        }
+        
+        .mission-btn {
+            padding: 12px 25px !important;
+            font-size: 0.9rem !important;
+        }
+        
+        [style*="border-radius: 30% 70% 70% 30%"] {
+            max-width: 100%;
+        }
+    }
+    
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
+        
+        .col-lg-6:first-child {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        
+        .mission-btn {
+            padding: 15px 35px !important;
+        }
+    }
+    
+    /* Ensure image never gets too large */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Remove any added stats/experience elements */
+    .stats-row {
+        display: none;
+    }
+</style>
+
+<!-- ===== SECTION 5: FREE DEMO CLASS - Unique Design with Blended Image ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Organic Background Shapes -->
+    <div style="position: absolute; top: -20px; right: -20px; width: 250px; height: 250px; background: #F26B1D; border-radius: 60% 40% 50% 50% / 30% 60% 40% 70%; opacity: 0.03; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 280px; height: 280px; background: #0B3C73; border-radius: 40% 60% 70% 30% / 50% 40% 60% 50%; opacity: 0.03; z-index: 0;"></div>
+    <div style="position: absolute; top: 40%; left: 10%; width: 150px; height: 150px; background: #FFC845; border-radius: 50% 50% 30% 70% / 60% 30% 70% 40%; opacity: 0.02; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center g-4 g-lg-5">
+            
+            
+            <!-- Content Column -->
+            <div class="col-lg-7" data-aos="fade-left">
+                <!-- Section Identifier (No limited offer text) -->
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                    <div style="width: 30px; height: 2px; background: #F26B1D;"></div>
+                    <span style="color: #0B3C73; font-weight: 600; letter-spacing: 2px; font-size: 0.8rem; text-transform: uppercase;">Try us free</span>
+                    <div style="width: 30px; height: 2px; background: #F26B1D;"></div>
+                </div>
+                
+                <!-- Main Heading with Unique Underline Design -->
+                <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 20px; position: relative;">
+                    Free Demo Class for 
+                    <span style="color: #F26B1D; position: relative; display: inline-block;">
+                        Your Child
+                        <!-- Unique Double Underline Design -->
+                        <span style="position: absolute; bottom: -8px; left: 0; width: 100%; height: 8px;">
+                            <!-- Main thick underline -->
+                            <svg width="100%" height="8" viewBox="0 0 200 8" style="position: absolute; bottom: 0; left: 0;">
+                                <path d="M0 6 Q 30 2, 60 6 T 120 6 T 180 6" stroke="#FFC845" stroke-width="4" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            <!-- Secondary dotted underline -->
+                            <svg width="100%" height="8" viewBox="0 0 200 8" style="position: absolute; bottom: -4px; left: 2px;">
+                                <circle cx="10" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                                <circle cx="40" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                                <circle cx="70" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                                <circle cx="100" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                                <circle cx="130" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                                <circle cx="160" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                                <circle cx="190" cy="6" r="1.5" fill="#F26B1D" opacity="0.5"/>
+                            </svg>
+                        </span>
+                    </span>
+                </h2>
+                
+                <!-- Description -->
+                <p style="color: #475569; font-size: 1rem; line-height: 1.7; margin-bottom: 25px; max-width: 550px;">
+                    Let your child experience our teaching style with absolutely no commitment. See the difference yourself and discover how we make learning fun!
+                </p>
+                
+                <!-- Feature Grid - Simple Check Marks -->
+                <div class="row g-3 mb-4">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div style="width: 22px; height: 22px; background: #EAF2FB; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                <i class="fas fa-check" style="color: #0B3C73; font-size: 0.7rem;"></i>
+                            </div>
+                            <span style="color: #1E293B; font-size: 0.9rem;">No payment required</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div style="width: 22px; height: 22px; background: #EAF2FB; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                <i class="fas fa-check" style="color: #0B3C73; font-size: 0.7rem;"></i>
+                            </div>
+                            <span style="color: #1E293B; font-size: 0.9rem;">30-minute session</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div style="width: 22px; height: 22px; background: #EAF2FB; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                <i class="fas fa-check" style="color: #0B3C73; font-size: 0.7rem;"></i>
+                            </div>
+                            <span style="color: #1E293B; font-size: 0.9rem;">Meet expert teachers</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <div style="width: 22px; height: 22px; background: #EAF2FB; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                                <i class="fas fa-check" style="color: #0B3C73; font-size: 0.7rem;"></i>
+                            </div>
+                            <span style="color: #1E293B; font-size: 0.9rem;">Custom learning plan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Info - Clean & Compact -->
+                <div style="background: #FFFFFF; border-radius: 60px; padding: 12px 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; border: 1px solid #E2E8F0; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(11, 60, 115, 0.03);">
+                    <div class="d-flex align-items-center">
+                        <div style="width: 32px; height: 32px; background: #FFE8DA; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 8px;">
+                            <i class="fas fa-phone-alt" style="color: #F26B1D; font-size: 0.9rem;"></i>
+                        </div>
+                        <span style="color: #0B3C73; font-weight: 600;">+91 99495 950995</span>
+                    </div>
+                    <div style="width: 1px; height: 24px; background: #E2E8F0;"></div>
+                    <div class="d-flex align-items-center">
+                        <div style="width: 32px; height: 32px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 8px;">
+                            <i class="fas fa-envelope" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                        </div>
+                        <span style="color: #0B3C73; font-weight: 500;">sureshjadhav2831@gmail.com</span>
+                    </div>
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                    <a href="https://wa.me/9199495950995" target="_blank" class="demo-btn-primary" style="background: #F26B1D; color: white; padding: 14px 32px; border-radius: 60px; font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 20px rgba(242, 107, 29, 0.2); border: none; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <span style="position: relative; z-index: 2;"><i class="fab fa-whatsapp me-2"></i>Book Free Demo</span>
+                        <span style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #D95A12; transition: left 0.4s ease; z-index: 1;"></span>
+                    </a>
+                    <a href="/contact/" class="demo-btn-secondary" style="background: transparent; color: #0B3C73; border: 2px solid #0B3C73; padding: 14px 32px; border-radius: 60px; font-weight: 600; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <span style="position: relative; z-index: 2;"><i class="fas fa-comment me-2"></i>Ask Questions</span>
+                        <span style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: #0B3C73; transition: left 0.4s ease; z-index: 1;"></span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Image Column - Blended Design -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <div style="position: relative;">
+                    <!-- Background Blending Elements -->
+                    <div style="position: absolute; top: -15px; left: -15px; width: 120px; height: 120px; background: #EAF2FB; border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%; z-index: 0;"></div>
+                    <div style="position: absolute; bottom: -20px; right: -10px; width: 150px; height: 150px; background: #FFE8DA; border-radius: 60% 40% 30% 70% / 40% 60% 40% 60%; z-index: 0;"></div>
+                    
+                    <!-- Image Container with Organic Mask -->
+                    <div style="position: relative; border-radius: 40% 60% 50% 50% / 50% 40% 60% 50%; overflow: hidden; box-shadow: 0 25px 40px -15px rgba(11, 60, 115, 0.2); transform: rotate(0.5deg); transition: transform 0.5s ease;">
+                        <!-- Gradient Overlay to Blend Image -->
+                        <div style="position: absolute; inset: 0; background: linear-gradient(145deg, rgba(242,107,29,0.08) 0%, rgba(255,200,69,0.08) 100%); z-index: 1; pointer-events: none;"></div>
+                        <img src="{% static 'images/demo2.jpg' %}" 
+                             alt="Free Demo Class" 
+                             class="img-fluid"
+                             style="width: 100%; height: auto; display: block; transform: scale(1.02); transition: transform 0.6s ease; filter: contrast(1.02) brightness(1.02);">
+                    </div>
+                    
+                    <!-- Floating Accent Elements (No text badge) -->
+                    <div style="position: absolute; bottom: 15px; left: 15px; width: 50px; height: 50px; background: #F26B1D; border-radius: 50% 20% 50% 30%; opacity: 0.15; z-index: 1;"></div>
+                    <div style="position: absolute; top: 20px; right: 25px; width: 40px; height: 40px; background: #FFC845; border-radius: 30% 70% 50% 50% / 60% 40% 60% 40%; opacity: 0.15; z-index: 1;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile & Interactive Styles -->
+<style>
+    /* Button Hover Effects */
+    .demo-btn-primary:hover span:last-child,
+    .demo-btn-secondary:hover span:last-child {
+        left: 0;
+    }
+    
+    .demo-btn-primary:hover span:first-child,
+    .demo-btn-secondary:hover span:first-child {
+        color: white;
+    }
+    
+    .demo-btn-primary:hover {
+        box-shadow: 0 15px 25px rgba(242, 107, 29, 0.3);
+        transform: translateY(-2px);
+    }
+    
+    .demo-btn-secondary:hover {
+        border-color: transparent;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(11, 60, 115, 0.15);
+    }
+    
+    /* Image hover */
+    @media (min-width: 992px) {
+        [style*="border-radius: 40% 60% 50% 50% / 50% 40% 60% 50%;"]:hover {
+            transform: rotate(0deg) scale(1.02);
+            box-shadow: 0 30px 45px -15px rgba(11, 60, 115, 0.25);
+        }
+        
+        [style*="border-radius: 40% 60% 50% 50% / 50% 40% 60% 50%;"]:hover img {
+            transform: scale(1.05);
+        }
+    }
+    
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h2 {
+            font-size: 2rem !important;
+        }
+        
+        h2 span span {
+            bottom: -5px !important;
+        }
+        
+        p {
+            font-size: 0.95rem !important;
+            margin-bottom: 20px !important;
+        }
+        
+        /* Feature grid */
+        .col-6 {
+            margin-bottom: 8px;
+        }
+        
+        .col-6 span {
+            font-size: 0.85rem !important;
+        }
+        
+        /* Contact bar */
+        [style*="border-radius: 60px; padding: 12px 22px;"] {
+            padding: 15px !important;
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 12px !important;
+        }
+        
+        [style*="width: 1px; height: 24px;"] {
+            display: none;
+        }
+        
+        .d-flex.align-items-center span {
+            font-size: 0.9rem !important;
+        }
+        
+        /* Buttons */
+        .demo-btn-primary, .demo-btn-secondary {
+            padding: 14px 25px !important;
+            font-size: 0.95rem !important;
+            width: 100%;
+        }
+        
+        /* Image */
+        [style*="border-radius: 40% 60% 50% 50%"] {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        .py-5 {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+        
+        /* Section identifier */
+        [style*="width: 30px; height: 2px;"] {
+            width: 20px !important;
+        }
+        
+        [style*="letter-spacing: 2px; font-size: 0.8rem;"] {
+            font-size: 0.7rem !important;
+        }
+    }
+    
+    /* Small phones */
+    @media (max-width: 375px) {
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        .col-6 span {
+            font-size: 0.8rem !important;
+        }
+        
+        .d-flex.align-items-center span {
+            font-size: 0.85rem !important;
+        }
+        
+        [style*="border-radius: 40% 60% 50% 50%"] {
+            max-width: 100%;
+        }
+        
+        [style*="width: 32px; height: 32px;"] {
+            width: 28px !important;
+            height: 28px !important;
+        }
+        
+        [style*="width: 32px; height: 32px;"] i {
+            font-size: 0.8rem !important;
+        }
+    }
+    
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .container {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        
+        h2 {
+            font-size: 2.2rem !important;
+        }
+        
+        [style*="border-radius: 40% 60% 50% 50%"] {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        
+        .demo-btn-primary, .demo-btn-secondary {
+            padding: 14px 28px !important;
+        }
+    }
+    
+    /* Ensure no overflow */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+</style>
+
+
+
+{% endblock %}

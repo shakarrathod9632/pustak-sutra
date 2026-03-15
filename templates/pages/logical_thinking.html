@@ -1,0 +1,624 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: COURSE HERO ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background: #EAF2FB; border-radius: 40% 60% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFE8DA; border-radius: 60% 40% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #FFFFFF; padding: 8px 25px; border-radius: 60px; box-shadow: 0 5px 15px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0;">
+                    <i class="fas fa-brain" style="color: #F26B1D; margin-right: 8px;"></i>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">🧠 THINKING SKILLS PROGRAM</span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                    Logical Thinking & <span style="color: #F26B1D; position: relative; display: inline-block;">Problem Solving
+                    <svg width="100%" height="15" viewBox="0 0 250 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 60 0, 120 10 T 250 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p style="color: #475569; font-size: 1.2rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Logical thinking helps children analyze problems, find smart solutions, and make better decisions. Our program develops independent thinkers who approach challenges with confidence and creativity.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: WHY LOGICAL THINKING IS IMPORTANT ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHY IT MATTERS</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Why Logical Thinking is Important for Children
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Reason 1 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-puzzle-piece" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Stronger Problem-Solving Ability</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Children learn to break down problems, identify solutions, and work through challenges step by step.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-chart-line" style="color: #F26B1D; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Improved Analytical Thinking</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Students learn to examine information carefully, find patterns, and draw logical conclusions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 3 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-balance-scale" style="color: #FFC845; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Better Decision Making</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Children learn to weigh options, consider outcomes, and make thoughtful choices in academics and life.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 4 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-lightbulb" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Increased Creativity</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Logical thinking encourages children to think differently, explore multiple solutions, and generate new ideas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: WHAT STUDENTS WILL LEARN ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">COURSE CONTENT</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        What Students Will Learn
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Learning Item 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shapes" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Pattern Recognition</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6; margin-left: 0;">Children learn to identify, create, and extend patterns – a fundamental skill for logical thinking.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-puzzle-piece" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Logical Puzzles</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Engaging puzzles help children develop step-by-step thinking and persistence in finding solutions.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-brain" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Reasoning Skills</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Children learn to think logically, make connections, and draw conclusions based on evidence.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-tasks" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Problem Solving Strategies</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Students learn different approaches to solving problems, from simple to complex challenges.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-bar" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Analytical Thinking</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Children learn to examine information carefully and think critically about what they observe.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 6 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-lightbulb" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Creative Problem Solving</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Thinking outside the box helps children discover innovative solutions to everyday challenges.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 4: LEVEL BASED SYLLABUS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">AGE APPROPRIATE</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Level Based Syllabus
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Level 1: LKG - UKG -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #0B3C73; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #0B3C73; font-weight: 700; font-size: 1.2rem;">1</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">LKG – UKG</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Basic pattern recognition (colors, shapes, sizes)</li>
+                        <li style="margin-bottom: 5px;">Matching and sorting activities</li>
+                        <li style="margin-bottom: 5px;">Simple sequencing (what comes next)</li>
+                        <li>Visual discrimination games</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Thinking Skills Developed:</p>
+                    <p style="color: #475569;">Recognize patterns, sort objects by attributes, and develop early observation skills.</p>
+                </div>
+            </div>
+            
+            <!-- Level 2: Class 1 - Class 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #F26B1D; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #F26B1D; font-weight: 700; font-size: 1.2rem;">2</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 1 – Class 2</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Simple logic puzzles</li>
+                        <li style="margin-bottom: 5px;">Odd one out activities</li>
+                        <li style="margin-bottom: 5px;">Basic reasoning exercises</li>
+                        <li>Following multi-step instructions</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Thinking Skills Developed:</p>
+                    <p style="color: #475569;">Solve simple puzzles, think logically, and follow step-by-step processes.</p>
+                </div>
+            </div>
+            
+            <!-- Level 3: Class 3 - Class 5 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #FFC845; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #FFC845; font-weight: 700; font-size: 1.2rem;">3</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 3 – Class 5</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Advanced logic puzzles</li>
+                        <li style="margin-bottom: 5px;">Reasoning and analogy exercises</li>
+                        <li style="margin-bottom: 5px;">Strategy games (board games, riddles)</li>
+                        <li>Problem solving challenges</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Thinking Skills Developed:</p>
+                    <p style="color: #475569;">Apply logic to complex problems, think strategically, and develop reasoning skills.</p>
+                </div>
+            </div>
+            
+            <!-- Level 4: Class 6 - Class 8 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #0B3C73; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #0B3C73; font-weight: 700; font-size: 1.2rem;">4</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 6 – Class 8</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Critical thinking exercises</li>
+                        <li style="margin-bottom: 5px;">Complex problem solving scenarios</li>
+                        <li style="margin-bottom: 5px;">Brain teasers and mind puzzles</li>
+                        <li>Decision making challenges</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Thinking Skills Developed:</p>
+                    <p style="color: #475569;">Think critically, analyze complex situations, and make thoughtful decisions independently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 5: TEACHING APPROACH ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">HOW WE TEACH</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Our Teaching Approach
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Approach 1 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-puzzle-piece" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Puzzle Based Learning</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Children develop logical thinking by solving engaging puzzles and brain teasers.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 2 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-hands" style="color: #F26B1D; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Activity Based Exercises</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Hands-on activities make learning fun and help children understand concepts naturally.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 3 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-users" style="color: #FFC845; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Interactive Problem Solving</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Group activities encourage children to discuss ideas and solve problems together.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 4 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-comments" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Discussion Based Thinking</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Guided discussions help children articulate their thoughts and think more deeply.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 6: COURSE HIGHLIGHTS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT MAKES US SPECIAL</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Course Highlights
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Highlight 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-brain" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Brain Development Activities</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Specially designed activities that stimulate young minds and enhance cognitive development.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-puzzle-piece" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Fun Learning Through Puzzles</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Children develop critical thinking while enjoying age-appropriate puzzles and games.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-tasks" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Problem Solving Skills</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Students learn systematic approaches to tackle problems of increasing complexity.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-line" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Critical Thinking Development</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Children learn to analyze information, question assumptions, and think independently.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-balance-scale" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Confidence in Decision Making</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Students gain confidence in making thoughtful choices and solving problems independently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 7: LEARNING OUTCOMES ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT STUDENTS GAIN</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Learning Outcomes
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+                <div style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Improved Reasoning Ability</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children learn to think logically and make connections between ideas.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Better Problem Solving Skills</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Students develop systematic approaches to solve problems effectively.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Stronger Analytical Thinking</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children learn to examine information carefully and draw meaningful conclusions.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-left">
+                <div style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Confidence in Tackling Challenges</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Students approach new challenges with confidence and persistence.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Creative Thinking</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children learn to think outside the box and generate innovative ideas.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Independent Thinking</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Students become independent thinkers who can make thoughtful decisions.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 8: CALL TO ACTION ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #0B3C73 0%, #082A52 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; background: #F26B1D; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFC845; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">
+                    Develop <span style="color: #FFC845;">Smart Thinking</span> Skills
+                </h2>
+                
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto 30px;">
+                    Give your child the tools to think clearly, solve problems creatively, and approach challenges with confidence. Help them become an independent thinker and lifelong learner.
+                </p>
+                
+                <a href="/enroll/" class="btn" style="background: #F26B1D; color: white; padding: 16px 45px; border-radius: 60px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-block; box-shadow: 0 15px 30px rgba(242, 107, 29, 0.3); transition: all 0.3s ease;">
+                    <i class="fas fa-graduation-cap me-2"></i>Enroll Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        h2 {
+            font-size: 2rem !important;
+        }
+        
+        h3 {
+            font-size: 1.3rem !important;
+        }
+        
+        p {
+            font-size: 0.95rem !important;
+        }
+        
+        [style*="padding: 30px;"] {
+            padding: 25px 20px !important;
+        }
+        
+        .btn {
+            padding: 14px 35px !important;
+            font-size: 1rem !important;
+            width: 100%;
+        }
+        
+        .btn[style*="background: #F26B1D"] {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        .btn {
+            padding: 12px 30px !important;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #D95A12 !important;
+            box-shadow: 0 20px 35px rgba(242, 107, 29, 0.4) !important;
+        }
+    }
+</style>
+
+{% endblock %}

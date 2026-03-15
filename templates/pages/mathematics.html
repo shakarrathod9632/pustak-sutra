@@ -1,0 +1,624 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: COURSE HERO ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background: #EAF2FB; border-radius: 40% 60% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFE8DA; border-radius: 60% 40% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #FFFFFF; padding: 8px 25px; border-radius: 60px; box-shadow: 0 5px 15px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0;">
+                    <i class="fas fa-calculator" style="color: #F26B1D; margin-right: 8px;"></i>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">📐 MATHEMATICS PROGRAM</span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                    Mathematics <span style="color: #F26B1D; position: relative; display: inline-block;">Learning Program
+                    <svg width="100%" height="15" viewBox="0 0 220 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 55 0, 110 10 T 220 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p style="color: #475569; font-size: 1.2rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Strong mathematics skills help children develop logical thinking, solve problems confidently, and build a solid foundation for academic success. Our program makes math enjoyable and easy to understand.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: WHY MATHEMATICS IS IMPORTANT ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHY IT MATTERS</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Why Mathematics is Important for Children
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Reason 1 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-brain" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Logical Reasoning Development</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Mathematics teaches children to think step by step, recognize patterns, and make logical connections.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-chart-line" style="color: #F26B1D; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Improved Analytical Thinking</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Children learn to analyze situations, break down problems, and find effective solutions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 3 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-puzzle-piece" style="color: #FFC845; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Better Problem Solving</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">Math teaches children to approach challenges with confidence and find solutions step by step.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reason 4 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="display: flex; align-items: flex-start; gap: 15px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="min-width: 50px; height: 50px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-star" style="color: #0B3C73; font-size: 1.3rem;"></i>
+                    </div>
+                    <div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 8px;">Stronger Academic Confidence</h4>
+                        <p style="color: #475569; font-size: 0.95rem; line-height: 1.6;">When children understand math, they feel more confident in school and in their own abilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: WHAT STUDENTS WILL LEARN ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">COURSE CONTENT</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        What Students Will Learn
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Learning Item 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-sort-numeric-up-alt" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Number Sense & Counting</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6; margin-left: 0;">Children develop a strong understanding of numbers, counting, and number relationships from an early age.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-plus-circle" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Basic Arithmetic Operations</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Addition, subtraction, multiplication, and division are taught step by step with clear explanations.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shapes" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Understanding Patterns</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Children learn to recognize, create, and extend patterns – a key skill for logical thinking.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-question-circle" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Solving Word Problems</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Students learn to read, understand, and solve real-world math problems with confidence.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-cogs" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Logical Thinking in Math</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Children develop the ability to think logically and approach math problems systematically.</p>
+                </div>
+            </div>
+            
+            <!-- Learning Item 6 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-ruler-combined" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Measurement & Geometry</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.6;">Basic concepts of measurement, shapes, and spatial understanding are introduced gradually.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 4: LEVEL BASED SYLLABUS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">AGE APPROPRIATE</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Level Based Syllabus
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Level 1: LKG - UKG -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #0B3C73; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #0B3C73; font-weight: 700; font-size: 1.2rem;">1</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">LKG – UKG</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Number recognition (1 to 50)</li>
+                        <li style="margin-bottom: 5px;">Counting objects and sequencing</li>
+                        <li style="margin-bottom: 5px;">Basic shapes (circle, square, triangle)</li>
+                        <li>Comparison (big/small, more/less)</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skills Students Will Develop:</p>
+                    <p style="color: #475569;">Recognize numbers, count confidently, and understand basic shapes and comparisons.</p>
+                </div>
+            </div>
+            
+            <!-- Level 2: Class 1 - Class 2 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #F26B1D; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #F26B1D; font-weight: 700; font-size: 1.2rem;">2</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 1 – Class 2</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Addition and subtraction (up to 2 digits)</li>
+                        <li style="margin-bottom: 5px;">Place value (ones and tens)</li>
+                        <li style="margin-bottom: 5px;">Simple word problems</li>
+                        <li>Introduction to multiplication tables</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skills Students Will Develop:</p>
+                    <p style="color: #475569;">Perform basic operations, understand place value, and solve simple word problems.</p>
+                </div>
+            </div>
+            
+            <!-- Level 3: Class 3 - Class 5 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #FFC845; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #FFC845; font-weight: 700; font-size: 1.2rem;">3</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 3 – Class 5</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Multiplication and division</li>
+                        <li style="margin-bottom: 5px;">Fractions and decimals basics</li>
+                        <li style="margin-bottom: 5px;">Geometry (perimeter, area, angles)</li>
+                        <li>Multi-step word problems</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skills Students Will Develop:</p>
+                    <p style="color: #475569;">Master multiplication and division, understand fractions, and solve complex problems.</p>
+                </div>
+            </div>
+            
+            <!-- Level 4: Class 6 - Class 8 -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%); border-radius: 30px; padding: 30px; border-left: 6px solid #0B3C73; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.05); height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <div style="width: 50px; height: 50px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                            <span style="color: #0B3C73; font-weight: 700; font-size: 1.2rem;">4</span>
+                        </div>
+                        <h3 style="color: #0B3C73; font-size: 1.5rem; font-weight: 700; margin: 0;">Class 6 – Class 8</h3>
+                    </div>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 10px;">Key Topics Covered:</p>
+                    <ul style="color: #475569; margin-bottom: 15px; padding-left: 20px;">
+                        <li style="margin-bottom: 5px;">Advanced fractions and decimals</li>
+                        <li style="margin-bottom: 5px;">Ratio, proportion, and percentages</li>
+                        <li style="margin-bottom: 5px;">Algebraic expressions</li>
+                        <li>Data handling and graphs</li>
+                    </ul>
+                    
+                    <p style="color: #475569; font-weight: 600; margin-bottom: 5px;">Skills Students Will Develop:</p>
+                    <p style="color: #475569;">Apply math to real-world situations, think algebraically, and analyze data confidently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 5: TEACHING APPROACH ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">HOW WE TEACH</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Our Teaching Approach
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Approach 1 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-lightbulb" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Concept Based Teaching</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">We focus on understanding the 'why' behind concepts, not just memorizing steps.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 2 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFE8DA; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-stairs" style="color: #F26B1D; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Step-by-Step Learning</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Complex topics are broken down into simple, manageable steps that build confidence.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 3 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #FFF4CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-pencil-ruler" style="color: #FFC845; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Practice Based Learning</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Regular practice helps reinforce concepts and build fluency in mathematical skills.</p>
+                </div>
+            </div>
+            
+            <!-- Approach 4 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; text-align: center; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 20px; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+                        <i class="fas fa-users" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                    </div>
+                    <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">Interactive Classroom Activities</h4>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Games, group work, and hands-on activities make math engaging and enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 6: COURSE HIGHLIGHTS ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT MAKES US SPECIAL</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Course Highlights
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Highlight 1 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-layer-group" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Strong Concept Foundation</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5; margin-left: 0;">We build deep understanding of core concepts that serve as building blocks for advanced math.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 2 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-stairs" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Step-by-Step Learning</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Each topic is introduced gradually, ensuring children never feel overwhelmed or lost.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 3 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFF4CC; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-pencil-alt" style="color: #FFC845; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Practice Focused Approach</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">Regular practice helps children master skills and build speed and accuracy.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 4 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #EAF2FB; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-brain" style="color: #0B3C73; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Logical Thinking Development</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">We nurture logical reasoning skills that help children approach problems systematically.</p>
+                </div>
+            </div>
+            
+            <!-- Highlight 5 -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div style="background: white; border-radius: 25px; padding: 25px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
+                        <div style="width: 45px; height: 45px; background: #FFE8DA; border-radius: 15px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-star" style="color: #F26B1D; font-size: 1.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.2rem; font-weight: 700; margin: 0;">Confidence Building in Math</h4>
+                    </div>
+                    <p style="color: #475569; font-size: 0.9rem; line-height: 1.5;">We celebrate every achievement, helping children believe in their mathematical abilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 7: LEARNING OUTCOMES ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <span style="color: #F26B1D; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem;">WHAT STUDENTS GAIN</span>
+                    <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-top: 10px; position: relative; display: inline-block; padding-bottom: 15px;">
+                        Learning Outcomes
+                        <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: #F26B1D; border-radius: 10px;"></span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+                <div style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Improved Calculation Skills</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children perform calculations quickly and accurately, building a strong foundation.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Better Understanding of Concepts</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Students grasp mathematical ideas deeply, not just memorize formulas.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Stronger Problem-Solving Ability</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children learn to approach problems logically and find effective solutions.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-md-6" data-aos="fade-left">
+                <div style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03); border: 1px solid #E2E8F0; height: 100%;">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Confidence in Math</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Students feel confident solving math questions in school and at home.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 20px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Logical Reasoning Skills</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Children develop the ability to think logically and make connections between ideas.</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 12px;">
+                            <i class="fas fa-check-circle" style="color: #F26B1D; font-size: 1.2rem; margin-top: 2px;"></i>
+                            <div>
+                                <h4 style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;">Academic Foundation</h4>
+                                <p style="color: #475569; font-size: 0.9rem; margin: 0;">Strong math skills prepare children for success in higher grades and beyond.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 8: CALL TO ACTION ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #0B3C73 0%, #082A52 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; background: #F26B1D; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFC845; border-radius: 50%; opacity: 0.1; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">
+                    Build Strong <span style="color: #FFC845;">Mathematical</span> Foundations
+                </h2>
+                
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto 30px;">
+                    Give your child the gift of strong math skills. Help them develop logical thinking, problem-solving abilities, and confidence in mathematics.
+                </p>
+                
+                <a href="/enroll/" class="btn" style="background: #F26B1D; color: white; padding: 16px 45px; border-radius: 60px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-block; box-shadow: 0 15px 30px rgba(242, 107, 29, 0.3); transition: all 0.3s ease;">
+                    <i class="fas fa-graduation-cap me-2"></i>Enroll Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        h2 {
+            font-size: 2rem !important;
+        }
+        
+        h3 {
+            font-size: 1.3rem !important;
+        }
+        
+        p {
+            font-size: 0.95rem !important;
+        }
+        
+        [style*="padding: 30px;"] {
+            padding: 25px 20px !important;
+        }
+        
+        .btn {
+            padding: 14px 35px !important;
+            font-size: 1rem !important;
+            width: 100%;
+        }
+        
+        .btn[style*="background: #F26B1D"] {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        .btn {
+            padding: 12px 30px !important;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #D95A12 !important;
+            box-shadow: 0 20px 35px rgba(242, 107, 29, 0.4) !important;
+        }
+    }
+</style>
+
+{% endblock %}

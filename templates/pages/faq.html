@@ -1,0 +1,352 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== FAQ SECTION ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; background: #EAF2FB; border-radius: 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: #FFE8DA; border-radius: 50%; opacity: 0.6; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <!-- Section Header -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #EAF2FB; padding: 8px 20px; border-radius: 50px;">
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 8px;"></span>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">GOT QUESTIONS?</span>
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-left: 8px;"></span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                    Frequently Asked <span style="color: #F26B1D; position: relative; display: inline-block;">Questions
+                    <svg width="100%" height="15" viewBox="0 0 180 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 45 0, 90 10 T 180 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    Find answers to common questions about our courses, teaching approach, and enrollment process. If you don't see your question here, feel free to contact us.
+                </p>
+            </div>
+        </div>
+        
+        <!-- FAQ Accordion -->
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="faq-container" style="background: white; border-radius: 30px; padding: 30px; box-shadow: 0 20px 40px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0;">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">What subjects are taught at Pustak Sutra?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem; transition: transform 0.3s ease;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                We offer three core programs: <strong style="color: #0B3C73;">Mathematics</strong>, <strong style="color: #0B3C73;">English</strong>, and <strong style="color: #0B3C73;">Logical Thinking & Problem Solving Skills</strong>. Each program is designed to build strong foundations and develop essential skills for students from LKG to Class 8.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">What age groups do you teach?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                We specialize in students from <strong style="color: #0B3C73;">LKG to Class 8</strong>. Our programs are carefully designed to match the learning needs of each age group, ensuring age-appropriate content and teaching methods.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">How are the classes conducted?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                Our classes are conducted in <strong style="color: #0B3C73;">small batches</strong> with a focus on interactive, activity-based learning. We believe in creating an engaging environment where children feel comfortable asking questions and participating actively.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">Do you focus on concept-based learning?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                Absolutely! We strongly believe in <strong style="color: #0B3C73;">concept-based learning</strong> rather than rote memorization. Our teaching approach focuses on helping children understand the 'why' behind concepts, building a strong foundation that stays with them.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">How can parents enroll their child?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                Enrolling is simple! You can <a href="/contact/" style="color: #F26B1D; text-decoration: none; font-weight: 500;">contact us</a> through phone, WhatsApp, or email. We'll guide you through the process, answer any questions, and help you choose the right program for your child. You can also book a free demo class to experience our teaching style.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">Are small batch sizes maintained?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                Yes! We maintain <strong style="color: #0B3C73;">small batch sizes</strong> (maximum 8 students per class) to ensure every child receives personalized attention. This allows our teachers to focus on each student's individual learning needs and progress.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">Do you provide regular assessments?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                We conduct <strong style="color: #0B3C73;">regular assessments and progress checks</strong> to track each child's development. These are designed to be encouraging rather than stressful, helping us identify areas where additional support may be needed.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 8 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">How can parents contact the academy?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                You can reach us through multiple channels: <strong style="color: #0B3C73;">Call: 9945950995</strong>, <strong style="color: #0B3C73;">WhatsApp</strong> on the same number, <strong style="color: #0B3C73;">Email: mypustaksutra@gmail.com</strong>, or connect with us on <strong style="color: #0B3C73;">Instagram, Facebook, and YouTube</strong>. We're always happy to help!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 9 -->
+                    <div class="faq-item mb-3" style="border-bottom: 1px solid #E2E8F0;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">What makes Pustak Sutra different from other academies?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 20px; margin: 0;">
+                                At Pustak Sutra, we focus on <strong style="color: #0B3C73;">understanding over memorization</strong>. Our small batch sizes, activity-based learning, and nurturing environment create a unique experience where children actually enjoy learning. We build strong foundations that help students succeed not just in exams, but in life.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 10 -->
+                    <div class="faq-item" style="border-bottom: none;">
+                        <button class="faq-question" onclick="toggleFAQ(this)" style="width: 100%; text-align: left; padding: 18px 0; background: none; border: none; display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+                            <span style="color: #0B3C73; font-size: 1.1rem; font-weight: 600; padding-right: 20px;">Is there a free demo class available?</span>
+                            <span class="faq-icon" style="width: 30px; height: 30px; background: #EAF2FB; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-plus" style="color: #0B3C73; font-size: 0.9rem;"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                            <p style="color: #475569; font-size: 1rem; line-height: 1.6; padding-bottom: 5px; margin: 0;">
+                                Yes! We offer <strong style="color: #0B3C73;">free demo classes</strong> for all our programs. This gives you and your child an opportunity to experience our teaching style firsthand before making any commitment. Simply <a href="/contact/" style="color: #F26B1D; text-decoration: none; font-weight: 500;">contact us</a> to schedule a demo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Still Have Questions -->
+                <div style="text-align: center; margin-top: 40px;">
+                    <p style="color: #475569; margin-bottom: 15px;">Still have questions? We're here to help!</p>
+                    <a href="/contact/" class="btn" style="background: #F26B1D; color: white; padding: 14px 35px; border-radius: 60px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 10px 25px rgba(242, 107, 29, 0.2); transition: all 0.3s ease;">
+                        <i class="fas fa-comment me-2"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ JavaScript -->
+<script>
+    function toggleFAQ(button) {
+        // Find the answer div (next sibling of the button's parent)
+        const faqItem = button.closest('.faq-item');
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = button.querySelector('.faq-icon i');
+        
+        // Toggle the answer height
+        if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+            answer.style.maxHeight = '0';
+            icon.style.transform = 'rotate(0deg)';
+        } else {
+            // Close all other FAQs first
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            const allIcons = document.querySelectorAll('.faq-icon i');
+            
+            allAnswers.forEach(item => {
+                item.style.maxHeight = '0';
+            });
+            
+            allIcons.forEach(item => {
+                item.style.transform = 'rotate(0deg)';
+            });
+            
+            // Open this one
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            icon.style.transform = 'rotate(45deg)';
+        }
+    }
+    
+    // Optional: Open first FAQ by default
+    window.addEventListener('load', function() {
+        // Uncomment the next line if you want the first FAQ open by default
+        // setTimeout(() => { document.querySelector('.faq-question').click(); }, 500);
+    });
+</script>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    /* FAQ Item hover effect */
+    .faq-question:hover .faq-icon {
+        background: #F26B1D !important;
+        transition: background 0.3s ease;
+    }
+    
+    .faq-question:hover .faq-icon i {
+        color: white !important;
+    }
+    
+    .faq-question:hover span:first-child {
+        color: #F26B1D !important;
+        transition: color 0.3s ease;
+    }
+    
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        .faq-container {
+            padding: 20px !important;
+        }
+        
+        .faq-question span:first-child {
+            font-size: 1rem !important;
+        }
+        
+        .faq-question {
+            padding: 15px 0 !important;
+        }
+        
+        .faq-icon {
+            width: 28px !important;
+            height: 28px !important;
+        }
+        
+        .faq-icon i {
+            font-size: 0.8rem !important;
+        }
+        
+        .faq-answer p {
+            font-size: 0.95rem !important;
+        }
+        
+        .btn {
+            padding: 12px 30px !important;
+            font-size: 1rem !important;
+        }
+    }
+    
+    /* Small phones */
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        .faq-question span:first-child {
+            font-size: 0.95rem !important;
+        }
+        
+        .faq-icon {
+            width: 25px !important;
+            height: 25px !important;
+        }
+    }
+    
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .container {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        
+        h1 {
+            font-size: 2.8rem !important;
+        }
+    }
+    
+    /* Desktop hover effect for button */
+    @media (min-width: 992px) {
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #D95A12 !important;
+            box-shadow: 0 15px 30px rgba(242, 107, 29, 0.3) !important;
+        }
+    }
+    
+    /* Smooth transitions */
+    .faq-answer {
+        transition: max-height 0.3s ease;
+    }
+    
+    .faq-icon {
+        transition: background 0.3s ease;
+    }
+    
+    .faq-icon i {
+        transition: transform 0.3s ease;
+    }
+</style>
+
+{% endblock %}

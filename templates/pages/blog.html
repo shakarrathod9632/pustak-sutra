@@ -1,0 +1,569 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: BLOG HERO ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -50px; right: -50px; width: 250px; height: 250px; background: #EAF2FB; border-radius: 40% 60% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 200px; height: 200px; background: #FFE8DA; border-radius: 60% 40% 50% 50%; opacity: 0.5; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #FFFFFF; padding: 8px 25px; border-radius: 60px; box-shadow: 0 5px 15px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0;">
+                    <i class="fas fa-pencil-alt" style="color: #F26B1D; margin-right: 8px;"></i>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">📚 PARENT RESOURCES</span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px;">
+                    Learning <span style="color: #F26B1D; position: relative; display: inline-block;">Blog
+                    <svg width="100%" height="15" viewBox="0 0 150 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 40 0, 80 10 T 150 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: BLOG POSTS GRID ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <!-- Category Filters - Fully Functional -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" data-aos="fade-up" id="filterContainer">
+            <button class="filter-btn active" data-filter="all" style="background: #0B3C73; color: white; padding: 8px 22px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">All Posts</button>
+            <button class="filter-btn" data-filter="habits" style="background: #F8FAFC; color: #475569; padding: 8px 22px; border-radius: 50px; font-weight: 500; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">Learning Habits</button>
+            <button class="filter-btn" data-filter="math" style="background: #F8FAFC; color: #475569; padding: 8px 22px; border-radius: 50px; font-weight: 500; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">Early Math</button>
+            <button class="filter-btn" data-filter="english" style="background: #F8FAFC; color: #475569; padding: 8px 22px; border-radius: 50px; font-weight: 500; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">English</button>
+            <button class="filter-btn" data-filter="thinking" style="background: #F8FAFC; color: #475569; padding: 8px 22px; border-radius: 50px; font-weight: 500; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">Logical Thinking</button>
+            <button class="filter-btn" data-filter="parenting" style="background: #F8FAFC; color: #475569; padding: 8px 22px; border-radius: 50px; font-weight: 500; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">Parent Guides</button>
+            <button class="filter-btn" data-filter="tips" style="background: #F8FAFC; color: #475569; padding: 8px 22px; border-radius: 50px; font-weight: 500; font-size: 0.9rem; border: none; cursor: pointer; transition: all 0.3s ease;">Study Tips</button>
+        </div>
+        
+        <!-- Blog Posts Grid -->
+        <div class="row g-4" id="blogGrid">
+            <!-- Post 1 - Habits -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="habits">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #EAF2FB; color: #0B3C73; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">LEARNING HABITS</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Building Strong Study Habits in Children
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Simple daily routines that help young learners develop consistent study habits and a genuine love for learning.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 2 - Math -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="math">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFE8DA; color: #F26B1D; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">EARLY MATH</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Why Early Mathematics Skills Matter
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        How building strong math foundations in early years leads to better problem-solving skills and academic confidence.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 3 - English -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="english">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFF4CC; color: #FFC845; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">ENGLISH</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Simple Ways to Improve English Vocabulary
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Fun and engaging activities that make vocabulary building natural and enjoyable for young learners.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 4 - Thinking -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="thinking">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #EAF2FB; color: #0B3C73; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">LOGICAL THINKING</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Helping Children Develop Logical Thinking
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Simple puzzles and reasoning activities that develop critical thinking skills from an early age.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 5 - Parenting -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="parenting">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFE8DA; color: #F26B1D; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">PARENTING</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Creating a Positive Learning Environment at Home
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Simple ways to set up your home to encourage focus, curiosity, and a love for learning.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 6 - Tips -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="tips">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFF4CC; color: #FFC845; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">STUDY TIPS</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Study Tips for Primary School Students
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Practical strategies to help young students study effectively without feeling overwhelmed.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 7 - Habits -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="habits">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #EAF2FB; color: #0B3C73; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">LEARNING HABITS</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Encouraging Curiosity in Young Learners
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        How to nurture your child's natural curiosity and turn questions into learning opportunities.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 8 - Parenting -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="parenting">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFE8DA; color: #F26B1D; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">PARENT GUIDES</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        How Parents Can Support Daily Learning
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Easy ways to incorporate learning into everyday activities without pressure or stress.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 9 - Thinking -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="thinking">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #EAF2FB; color: #0B3C73; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">THINKING SKILLS</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Fun Activities That Improve Thinking Skills
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Games and puzzles that develop memory, focus, and problem-solving abilities.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 10 - Math -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="math">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFE8DA; color: #F26B1D; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">EARLY MATH</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Making Math Fun for Young Learners
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Creative ways to introduce mathematical concepts through play and everyday activities.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 11 - English -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="english">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFF4CC; color: #FFC845; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">ENGLISH</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Building Reading Comprehension Skills
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Simple strategies to help children understand and enjoy what they read.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Post 12 - Tips -->
+            <div class="col-md-6 col-lg-4 blog-post" data-category="tips">
+                <div class="blog-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="category-tag" style="background: #FFF4CC; color: #FFC845; padding: 4px 14px; border-radius: 30px; font-size: 0.7rem; font-weight: 600; display: inline-block;">STUDY TIPS</span>
+                    </div>
+                    <h3 style="color: #0B3C73; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; line-height: 1.4;">
+                        Helping Children Improve Focus and Attention
+                    </h3>
+                    <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+                        Simple techniques to help young learners stay focused during study time.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View All Posts Button -->
+        <div class="text-center mt-5" data-aos="fade-up" id="viewAllContainer">
+            <button id="viewAllBtn" class="btn" style="background: transparent; color: #0B3C73; border: 2px solid #0B3C73; padding: 12px 40px; border-radius: 50px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: all 0.3s ease;">
+                Load More Posts <i class="fas fa-arrow-down ms-2" id="viewAllIcon"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: CALL TO ACTION ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                <div style="width: 70px; height: 70px; background: #EAF2FB; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <i class="fas fa-graduation-cap" style="color: #0B3C73; font-size: 2rem;"></i>
+                </div>
+                
+                <h2 style="color: #0B3C73; font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">
+                    Support Your Child's <span style="color: #F26B1D;">Learning Journey</span>
+                </h2>
+                
+                <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto 30px;">
+                    Discover our courses designed to build strong foundations and make learning enjoyable for your child from LKG to Class 8.
+                </p>
+                
+                <a href="/enroll/" class="btn" style="background: #F26B1D; color: white; padding: 16px 45px; border-radius: 60px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-block; box-shadow: 0 15px 30px rgba(242, 107, 29, 0.2); transition: all 0.3s ease;">
+                    <i class="fas fa-calendar-check me-2"></i>Enroll Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Category Filters and Load More -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Category Filter Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogPosts = document.querySelectorAll('.blog-post');
+        const viewAllBtn = document.getElementById('viewAllBtn');
+        const viewAllIcon = document.getElementById('viewAllIcon');
+        let showingAll = false;
+        
+        // Show first 6 posts initially, hide others
+        blogPosts.forEach((post, index) => {
+            if (index >= 6) {
+                post.classList.add('hidden-post');
+                post.style.display = 'none';
+            } else {
+                post.style.display = 'block';
+            }
+        });
+        
+        // Filter function
+        function filterPosts(category) {
+            let visibleCount = 0;
+            const isShowingAll = !showingAll;
+            
+            blogPosts.forEach(post => {
+                const postCategory = post.getAttribute('data-category');
+                
+                if (category === 'all' || postCategory === category) {
+                    if (!showingAll && visibleCount >= 6) {
+                        // If not showing all and we've reached 6 visible posts, hide the rest
+                        post.classList.add('hidden-post');
+                        post.style.display = 'none';
+                    } else {
+                        post.classList.remove('hidden-post');
+                        post.style.display = 'block';
+                        visibleCount++;
+                    }
+                } else {
+                    post.classList.add('hidden-post');
+                    post.style.display = 'none';
+                }
+            });
+            
+            // Update view all button text based on visibility
+            if (showingAll) {
+                viewAllBtn.innerHTML = 'Show Less Posts <i class="fas fa-arrow-up ms-2"></i>';
+            } else {
+                viewAllBtn.innerHTML = 'Load More Posts <i class="fas fa-arrow-down ms-2"></i>';
+            }
+        }
+        
+        // Add click event to filter buttons
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => {
+                    btn.style.background = '#F8FAFC';
+                    btn.style.color = '#475569';
+                });
+                
+                // Add active class to clicked button
+                this.style.background = '#0B3C73';
+                this.style.color = 'white';
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Reset showingAll when filter changes
+                showingAll = false;
+                
+                // Apply filter
+                filterPosts(filterValue);
+            });
+        });
+        
+        // Load More / Show Less functionality
+        if (viewAllBtn) {
+            viewAllBtn.addEventListener('click', function() {
+                const activeFilter = document.querySelector('.filter-btn.active') || document.querySelector('[data-filter="all"]');
+                const currentFilter = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
+                
+                showingAll = !showingAll;
+                
+                let visibleCount = 0;
+                
+                blogPosts.forEach(post => {
+                    const postCategory = post.getAttribute('data-category');
+                    
+                    if (currentFilter === 'all' || postCategory === currentFilter) {
+                        if (showingAll) {
+                            // Show all matching posts
+                            post.classList.remove('hidden-post');
+                            post.style.display = 'block';
+                        } else {
+                            // Show only first 6 matching posts
+                            if (visibleCount < 6) {
+                                post.classList.remove('hidden-post');
+                                post.style.display = 'block';
+                                visibleCount++;
+                            } else {
+                                post.classList.add('hidden-post');
+                                post.style.display = 'none';
+                            }
+                        }
+                    }
+                });
+                
+                // Update button text and icon
+                if (showingAll) {
+                    viewAllBtn.innerHTML = 'Show Less Posts <i class="fas fa-arrow-up ms-2"></i>';
+                } else {
+                    viewAllBtn.innerHTML = 'Load More Posts <i class="fas fa-arrow-down ms-2"></i>';
+                }
+            });
+        }
+        
+        // Set "All Posts" as active by default
+        document.querySelector('[data-filter="all"]').click();
+    });
+</script>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    /* Blog Card Styling */
+    .blog-card {
+        background: white;
+        border-radius: 25px;
+        padding: 28px 25px;
+        box-shadow: 0 10px 25px rgba(11, 60, 115, 0.03);
+        border: 1px solid #E2E8F0;
+        height: 100%;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 35px rgba(242, 107, 29, 0.1);
+        border-color: #F26B1D;
+    }
+    
+    /* Filter Buttons */
+    .filter-btn {
+        transition: all 0.3s ease;
+        white-space: nowrap;
+    }
+    
+    .filter-btn:hover {
+        background: #EAF2FB !important;
+        color: #0B3C73 !important;
+    }
+    
+    .filter-btn.active:hover {
+        background: #0B3C73 !important;
+        color: white !important;
+    }
+    
+    /* Category Tags */
+    .category-tag {
+        transition: all 0.3s ease;
+    }
+    
+    .blog-card:hover .category-tag {
+        background: #F26B1D !important;
+        color: white !important;
+    }
+    
+    /* Hidden Posts */
+    .hidden-post {
+        display: none;
+    }
+    
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        h2 {
+            font-size: 2rem !important;
+        }
+        
+        .blog-card {
+            padding: 22px 20px !important;
+        }
+        
+        .blog-card h3 {
+            font-size: 1.2rem !important;
+            margin-bottom: 10px !important;
+        }
+        
+        .blog-card p {
+            font-size: 0.9rem !important;
+            line-height: 1.5 !important;
+        }
+        
+        /* Filter buttons horizontal scroll */
+        #filterContainer {
+            flex-wrap: nowrap !important;
+            overflow-x: auto;
+            padding-bottom: 12px;
+            justify-content: flex-start !important;
+            -webkit-overflow-scrolling: touch;
+            gap: 8px !important;
+            margin-bottom: 30px !important;
+        }
+        
+        .filter-btn {
+            flex-shrink: 0;
+            padding: 8px 18px !important;
+            font-size: 0.85rem !important;
+        }
+        
+        .btn {
+            padding: 14px 30px !important;
+            font-size: 1rem !important;
+            width: 100%;
+        }
+        
+        #viewAllBtn {
+            width: 100%;
+            padding: 14px 20px !important;
+        }
+        
+        /* Better spacing for blog grid */
+        .row.g-4 {
+            --bs-gutter-y: 1.2rem;
+        }
+    }
+    
+    /* Small phones */
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        h2 {
+            font-size: 1.8rem !important;
+        }
+        
+        .blog-card {
+            padding: 20px 18px !important;
+        }
+        
+        .blog-card h3 {
+            font-size: 1.1rem !important;
+        }
+        
+        .blog-card p {
+            font-size: 0.85rem !important;
+        }
+        
+        .category-tag {
+            font-size: 0.65rem !important;
+            padding: 3px 12px !important;
+        }
+    }
+    
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .container {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        
+        h1 {
+            font-size: 2.8rem !important;
+        }
+        
+        h2 {
+            font-size: 2.2rem !important;
+        }
+        
+        .blog-card {
+            padding: 25px 22px !important;
+        }
+    }
+    
+    /* Desktop hover effects */
+    @media (min-width: 992px) {
+        #viewAllBtn:hover {
+            background: #0B3C73 !important;
+            color: white !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(11, 60, 115, 0.2);
+        }
+        
+        .btn[style*="background: #F26B1D"]:hover {
+            background: #D95A12 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 35px rgba(242, 107, 29, 0.3) !important;
+        }
+    }
+    
+    /* Smooth transitions */
+    .blog-card, .filter-btn, .btn, #viewAllBtn, .category-tag {
+        transition: all 0.3s ease;
+    }
+</style>
+
+{% endblock %}

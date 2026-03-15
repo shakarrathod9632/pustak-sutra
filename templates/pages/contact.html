@@ -1,0 +1,370 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- ===== SECTION 1: CONTACT HERO - Centered Minimal Design ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+    <!-- Decorative Elements -->
+    <div style="position: absolute; top: -30px; right: -30px; width: 200px; height: 200px; background: #EAF2FB; border-radius: 50%; opacity: 0.5; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 150px; height: 150px; background: #FFE8DA; border-radius: 50%; opacity: 0.6; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <div class="d-inline-flex align-items-center mb-3" style="background: #EAF2FB; padding: 8px 20px; border-radius: 50px;">
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-right: 8px;"></span>
+                    <span style="color: #0B3C73; font-weight: 600; font-size: 0.9rem;">GET IN TOUCH</span>
+                    <span style="width: 8px; height: 8px; background: #F26B1D; border-radius: 50%; margin-left: 8px;"></span>
+                </div>
+                
+                <h1 style="color: #0B3C73; font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+                    Contact <span style="color: #F26B1D; position: relative; display: inline-block;">Pustak Sutra
+                    <svg width="100%" height="15" viewBox="0 0 200 15" style="position: absolute; bottom: -5px; left: 0;">
+                        <path d="M0 10 Q 50 0, 100 10 T 200 10" stroke="#FFC845" stroke-width="4" fill="none"/>
+                    </svg>
+                    </span>
+                </h1>
+                
+                <p style="color: #475569; font-size: 1.2rem; line-height: 1.6; max-width: 700px; margin: 0 auto;">
+                    We're here to answer your questions about our courses, teaching approach, or anything else. Reach out to us through any of the options below.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 2: CONTACT OPTIONS - Mixed Design (Call/WhatsApp/Email Cards + Social Media Badges) ===== -->
+<section class="py-5" style="background-color: #FFFFFF;">
+    <div class="container">
+        <!-- Primary Contact Methods - Card Style (Call, WhatsApp, Email) -->
+        <div class="row g-4 mb-5">
+            <!-- Call Card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <a href="tel:9945950995" style="text-decoration: none; display: block;">
+                    <div style="background: white; border-radius: 30px; padding: 35px 25px; box-shadow: 0 15px 30px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0; height: 100%; transition: all 0.3s ease; text-align: center;">
+                        <div style="width: 80px; height: 80px; background: #EAF2FB; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-phone-alt" style="color: #0B3C73; font-size: 2.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;">Call Us</h4>
+                        <p style="color: #F26B1D; font-size: 1.2rem; font-weight: 600; margin-bottom: 5px;">9945950995</p>
+                        <p style="color: #475569; font-size: 0.9rem; margin: 0;">Mon-Sat, 9am-6pm</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- WhatsApp Card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+                <a href="https://wa.me/919945950995" target="_blank" style="text-decoration: none; display: block;">
+                    <div style="background: white; border-radius: 30px; padding: 35px 25px; box-shadow: 0 15px 30px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0; height: 100%; transition: all 0.3s ease; text-align: center;">
+                        <div style="width: 80px; height: 80px; background: #FFE8DA; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fab fa-whatsapp" style="color: #F26B1D; font-size: 2.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;">WhatsApp Us</h4>
+                        <p style="color: #F26B1D; font-size: 1.2rem; font-weight: 600; margin-bottom: 5px;">+91 99459 50995</p>
+                        <p style="color: #475569; font-size: 0.9rem; margin: 0;">Quick replies on WhatsApp</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Email Card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="mailto:mypustaksutra@gmail.com" style="text-decoration: none; display: block;">
+                    <div style="background: white; border-radius: 30px; padding: 35px 25px; box-shadow: 0 15px 30px rgba(11, 60, 115, 0.05); border: 1px solid #E2E8F0; height: 100%; transition: all 0.3s ease; text-align: center;">
+                        <div style="width: 80px; height: 80px; background: #FFF4CC; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                            <i class="fas fa-envelope" style="color: #FFC845; font-size: 2.2rem;"></i>
+                        </div>
+                        <h4 style="color: #0B3C73; font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;">Email Us</h4>
+                        <p style="color: #F26B1D; font-size: 1rem; font-weight: 600; margin-bottom: 5px; word-break: break-all;">mypustaksutra@gmail.com</p>
+                        <p style="color: #475569; font-size: 0.9rem; margin: 0;">We'll respond within 24 hours</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Social Media - Unique Badge Style -->
+        <div class="text-center mb-4" data-aos="fade-up">
+            <span style="background: #EAF2FB; color: #0B3C73; padding: 5px 20px; border-radius: 30px; font-weight: 600; font-size: 0.9rem; display: inline-block;">CONNECT WITH US SOCIALLY</span>
+        </div>
+        
+        <div class="row g-3 justify-content-center">
+            <!-- Instagram - Pill Badge -->
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://www.instagram.com/mypustaksutra" target="_blank" style="text-decoration: none; display: block;">
+                    <div style="background: linear-gradient(135deg, #833AB4, #E1306C, #FCAF45); border-radius: 60px; padding: 15px 20px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div style="width: 40px; height: 40px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-instagram" style="color: #E1306C; font-size: 1.3rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <span style="color: white; font-weight: 600; font-size: 1rem; display: block;">Instagram</span>
+                            <span style="color: rgba(255,255,255,0.9); font-size: 0.75rem;">@mypustaksutra</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Facebook - Pill Badge -->
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                <a href="https://www.facebook.com/share/1KUedfHmQG/" target="_blank" style="text-decoration: none; display: block;">
+                    <div style="background: #1877F2; border-radius: 60px; padding: 15px 20px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 20px rgba(24,119,242,0.2); transition: all 0.3s ease;">
+                        <div style="width: 40px; height: 40px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-facebook-f" style="color: #1877F2; font-size: 1.3rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <span style="color: white; font-weight: 600; font-size: 1rem; display: block;">Facebook</span>
+                            <span style="color: rgba(255,255,255,0.9); font-size: 0.75rem;">Pustak Sutra</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- YouTube - Pill Badge -->
+            <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://youtube.com/@pustaksutra-l1s" target="_blank" style="text-decoration: none; display: block;">
+                    <div style="background: #FF0000; border-radius: 60px; padding: 15px 20px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 20px rgba(255,0,0,0.2); transition: all 0.3s ease;">
+                        <div style="width: 40px; height: 40px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fab fa-youtube" style="color: #FF0000; font-size: 1.3rem;"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <span style="color: white; font-weight: 600; font-size: 1rem; display: block;">YouTube</span>
+                            <span style="color: rgba(255,255,255,0.9); font-size: 0.75rem;">@pustaksutra-l1s</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SECTION 3: FINAL CTA - Centered Call to Action with WhatsApp Link ===== -->
+<section class="py-5" style="background: linear-gradient(135deg, #F8FAFC 0%, #FFFFFF 100%);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <!-- Quote Icon -->
+                <div style="width: 60px; height: 60px; background: #EAF2FB; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <i class="fas fa-quote-right" style="color: #0B3C73; font-size: 1.5rem;"></i>
+                </div>
+                
+                <p style="color: #0B3C73; font-size: 1.3rem; font-weight: 500; line-height: 1.6; max-width: 600px; margin: 0 auto 25px;">
+                    "We are happy to help your child begin a strong learning journey."
+                </p>
+                
+                <div style="width: 80px; height: 2px; background: #F26B1D; margin: 0 auto 25px;"></div>
+                
+                <!-- Enroll Now button redirects to WhatsApp -->
+                <a href="https://wa.me/919945950995" target="_blank" class="btn" style="background: #F26B1D; color: white; padding: 16px 45px; border-radius: 60px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 15px 30px rgba(242, 107, 29, 0.2); transition: all 0.3s ease;">
+                    <i class="fab fa-whatsapp"></i> Enroll Now on WhatsApp
+                </a>
+                
+                <p style="color: #475569; font-size: 0.9rem; margin-top: 15px;">Get instant responses on WhatsApp</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Responsive Styles -->
+<style>
+    /* Mobile-First Styles */
+    @media (max-width: 768px) {
+        .container {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+        
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        p {
+            font-size: 1rem !important;
+        }
+        
+        /* Primary Contact Cards */
+        [style*="padding: 35px 25px;"] {
+            padding: 25px 20px !important;
+        }
+        
+        [style*="width: 80px; height: 80px;"] {
+            width: 70px !important;
+            height: 70px !important;
+        }
+        
+        [style*="width: 80px; height: 80px;"] i {
+            font-size: 2rem !important;
+        }
+        
+        h4 {
+            font-size: 1.2rem !important;
+        }
+        
+        [style*="font-size: 1.2rem; font-weight: 600;"] {
+            font-size: 1.1rem !important;
+        }
+        
+        /* Social Media Badges */
+        [style*="border-radius: 60px; padding: 15px 20px;"] {
+            padding: 12px 15px !important;
+        }
+        
+        [style*="width: 40px; height: 40px;"] {
+            width: 35px !important;
+            height: 35px !important;
+        }
+        
+        [style*="width: 40px; height: 40px;"] i {
+            font-size: 1.1rem !important;
+        }
+        
+        [style*="font-size: 1rem; display: block;"] {
+            font-size: 0.9rem !important;
+        }
+        
+        [style*="font-size: 0.75rem;"] {
+            font-size: 0.7rem !important;
+        }
+        
+        /* CTA */
+        .btn {
+            padding: 14px 30px !important;
+            font-size: 1rem !important;
+            width: 100%;
+        }
+        
+        [style*="font-size: 1.3rem; font-weight: 500;"] {
+            font-size: 1.1rem !important;
+        }
+        
+        /* Adjust column spacing */
+        .row.g-3 {
+            --bs-gutter-y: 0.8rem;
+        }
+        
+        .col-6 {
+            padding: 0 6px;
+        }
+    }
+    
+    /* Small phones */
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 2.2rem !important;
+        }
+        
+        [style*="width: 80px; height: 80px;"] {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        
+        [style*="width: 80px; height: 80px;"] i {
+            font-size: 1.8rem !important;
+        }
+        
+        h4 {
+            font-size: 1.1rem !important;
+        }
+        
+        /* Social badges stack nicely */
+        [style*="border-radius: 60px; padding: 15px 20px;"] {
+            padding: 10px 12px !important;
+        }
+        
+        [style*="width: 40px; height: 40px;"] {
+            width: 30px !important;
+            height: 30px !important;
+        }
+        
+        [style*="width: 40px; height: 40px;"] i {
+            font-size: 1rem !important;
+        }
+    }
+    
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 991px) {
+        .container {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        
+        h1 {
+            font-size: 2.8rem !important;
+        }
+        
+        .btn {
+            padding: 14px 40px !important;
+        }
+        
+        /* Social badges in tablet */
+        [style*="border-radius: 60px; padding: 15px 20px;"] {
+            padding: 12px 18px !important;
+        }
+    }
+    
+    /* Desktop hover effects */
+    @media (min-width: 992px) {
+        /* Primary cards hover */
+        a:hover [style*="background: white; border-radius: 30px;"] {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 40px rgba(11, 60, 115, 0.15) !important;
+            border-color: #F26B1D !important;
+        }
+        
+        a:hover [style*="background: #EAF2FB;"] {
+            background: #F26B1D !important;
+        }
+        
+        a:hover [style*="background: #EAF2FB;"] i {
+            color: white !important;
+        }
+        
+        a:hover [style*="background: #FFE8DA;"] {
+            background: #0B3C73 !important;
+        }
+        
+        a:hover [style*="background: #FFE8DA;"] i {
+            color: white !important;
+        }
+        
+        a:hover [style*="background: #FFF4CC;"] {
+            background: #F26B1D !important;
+        }
+        
+        a:hover [style*="background: #FFF4CC;"] i {
+            color: white !important;
+        }
+        
+        /* Social badges hover */
+        [style*="background: linear-gradient(135deg, #833AB4, #E1306C, #FCAF45);"]:hover,
+        [style*="background: #1877F2;"]:hover,
+        [style*="background: #FF0000;"]:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.2) !important;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #D95A12 !important;
+            box-shadow: 0 20px 35px rgba(242, 107, 29, 0.3) !important;
+        }
+    }
+    
+    /* Ensure all links are tap-friendly */
+    a {
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+    }
+    
+    /* Smooth transitions */
+    [style*="background: white; border-radius: 30px;"],
+    [style*="background: #EAF2FB;"],
+    [style*="background: #FFE8DA;"],
+    [style*="background: #FFF4CC;"],
+    [style*="background: linear-gradient(135deg, #833AB4, #E1306C, #FCAF45);"],
+    [style*="background: #1877F2;"],
+    [style*="background: #FF0000;"],
+    .btn {
+        transition: all 0.3s ease;
+    }
+</style>
+
+{% endblock %}
