@@ -697,6 +697,29 @@
             box-shadow: 0 15px 30px rgba(11, 60, 115, 0.1) !important;
         }
     }
+
+
+    /* ===== FIX FOR MOBILE RIGHT SIDE SPACE ===== */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Prevent any element from exceeding screen width */
+* {
+    max-width: 100%;
+}
+
+/* Fix decorative circles going outside */
+section {
+    overflow-x: hidden;
+}
+
+/* Optional: safer fix for absolute elements */
+[style*="position: absolute"] {
+    max-width: 100%;
+}
 </style>
+
+
 
 {% endblock %}
