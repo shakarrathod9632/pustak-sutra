@@ -477,9 +477,7 @@
             font-size: 1.1rem !important;
         }
         
-        [style*="margin-left: 60px;"] {
-            margin-left: 55px !important;
-        }
+      
         
         /* Subject cards */
         [style*="width: 60px; height: 60px;"] {
@@ -536,9 +534,7 @@
             font-size: 1rem !important;
         }
         
-        [style*="margin-left: 60px;"] {
-            margin-left: 50px !important;
-        }
+
         
         [style*="width: 60px; height: 60px;"] {
             width: 45px !important;
@@ -607,6 +603,35 @@
         max-width: 100%;
         height: auto;
     }
+
+/* ===== FINAL ABOUT PAGE FIX ===== */
+@media (max-width: 768px) {
+
+    /* Completely remove left push */
+    [style*="margin-left: 60px;"] {
+        margin-left: 0 !important;
+    }
+
+    /* Fix Bootstrap overflow (main hidden issue) */
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Prevent any horizontal scroll */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* Fix container alignment */
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+    
 </style>
+
 
 {% endblock %}

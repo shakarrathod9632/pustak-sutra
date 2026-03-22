@@ -838,24 +838,47 @@
 
 
 
-    /* ===== FIX FOR MOBILE RIGHT SIDE SPACE ===== */
-html, body {
+/* =====
+{% comment %} html, body {
     overflow-x: hidden;
 }
 
-/* Prevent any element from exceeding screen width */
+
 * {
     max-width: 100%;
 }
 
-/* Fix decorative circles going outside */
+
 section {
     overflow-x: hidden;
 }
 
-/* Optional: safer fix for absolute elements */
+
 [style*="position: absolute"] {
-    max-width: 100%;
+    max-width: 100%; {% endcomment %}
+
+ ===== */
+
+
+/* ===== SMALL RIGHT SPACE FIX (ONLY MOBILE) ===== */
+@media (max-width: 768px) {
+
+    /* Fix Bootstrap row overflow */
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Keep container properly centered */
+    .container {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    /* Prevent tiny overflow from any element */
+    body {
+        overflow-x: hidden;
+    }
 }
 </style>
 
